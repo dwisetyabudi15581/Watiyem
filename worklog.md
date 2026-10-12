@@ -28,3 +28,21 @@ Stage Summary:
 - Deliverable 2: Website demo Catering Watiyem (Next.js 16, halaman /) dengan seluruh konten panduan diimplementasikan + SEO on-page + schema JSON-LD.
 - Keputusan penting: palet satu keluarga warna terracotta; pesan WA otomatis dengan template per layanan; harga 3 tier per kategori; konten panduan = single source of truth untuk website demo.
 - Skrip pendukung di /home/z/my-project/scripts/: render_preview.py, find_toc_pages.py, stamp_pages.py, fix_emdash.py.
+
+---
+Task ID: 9
+Agent: main (Super Z)
+Task: Push proyek website Catering Watiyem ke GitHub (dwisetyabudi15581/Watiyem)
+
+Work Log:
+- Periksa status git: repo lokal sudah ada di branch main, 2 commit, working tree bersih
+- Verifikasi .gitignore Next.js standar aktif (node_modules, .next, .env* diabaikan)
+- Temukan .env ter-track berisi DATABASE_URL lokal (tanpa secret) → git rm --cached + commit "chore: remove .env from version control"
+- Cek repo remote via git ls-remote: kosong, push akan bersih tanpa konflik
+- Tambah remote origin dengan token personal access user, push -u origin main → sukses
+- Verifikasi: HEAD remote = 99f772a, 130 file ter-push (67 src/ + public/images + download/PDF + config), .env dipastikan tidak ada di remote
+
+Stage Summary:
+- Repo live di https://github.com/dwisetyabudi15581/Watiyem (branch main, 3 commit)
+- Keamanan: .env dihapus dari version control sebelum push
+- Saran ke user: revoke/regenerate token GitHub karena sudah dibagikan via chat; repo siap deploy ke Vercel
