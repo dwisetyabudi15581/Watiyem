@@ -46,3 +46,17 @@ Stage Summary:
 - Repo live di https://github.com/dwisetyabudi15581/Watiyem (branch main, 3 commit)
 - Keamanan: .env dihapus dari version control sebelum push
 - Saran ke user: revoke/regenerate token GitHub karena sudah dibagikan via chat; repo siap deploy ke Vercel
+
+---
+Task ID: 10
+Agent: main (Super Z)
+Task: Tambahkan README.md ke repo GitHub setelah user deploy ke Vercel
+
+Work Log:
+- Buat README.md bahasa Indonesia berisi: overview bisnis (tabel NAP, layanan + harga), fitur website (10 fitur), tech stack, cara menjalankan lokal, struktur proyek, tabel "cara mengubah konten" (menuju catering-data.ts), referensi PDF panduan 29 halaman, dan petunjuk deployment Vercel
+- Commit "docs: tambah README.md" dan push ke origin/main → c6dcff3
+- Verifikasi: README.md terlihat di remote tree
+
+Stage Summary:
+- Repo kini punya README profesional yang menjelaskan bisnis, fitur, dan panduan kustomisasi
+- User sudah deploy ke Vercel; saran berikutnya: ganti testimoni fiktif jadi asli, daftar GSC & GBP, hubungkan domain
