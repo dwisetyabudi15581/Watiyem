@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Panduan Website &amp; SEO Lokal — Catering Watiyem</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+@page { size: 720px 1020px; margin: 0; }
+
+:root {
+    --c-bg: #FAF6F3;
+    --c-text: #3A2E2A;
+    --c-primary: #B3422A;
+    --c-primary-d: #8A3828;
+    --c-primary-l: #D08A70;
+    --c-fill: #F2E5DD;
+    --c-fill-2: #F7EEE8;
+    --c-muted: #8A7A72;
+    --c-border: #E8D8CF;
+    --c-thead: #EBDDD1;
+    --c-stripe: #F7EFE9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 720px;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    line-break: strict;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+@media screen {
+    html { height: auto; display: flex; justify-content: center; background: #E9DFD8; }
+    body { transform-origin: top center; margin: 20px auto; box-shadow: 0 0 50px rgba(58,46,42,0.18); }
+}
+
+/* ============ COVER ============ */
+.cover {
+    width: 720px;
+    height: 1020px;
+    box-sizing: border-box;
+    break-after: page;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 64px;
+}
+.cover-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.cover-bg .arc {
+    position: absolute;
+    right: -420px;
+    bottom: -520px;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: rgba(179, 66, 42, 0.05);
+}
+.cover-bg .arc2 {
+    position: absolute;
+    right: -320px;
+    bottom: -600px;
+    width: 760px;
+    height: 760px;
+    border-radius: 50%;
+    background: rgba(179, 66, 42, 0.04);
+}
+.cover-geo {
+    position: absolute;
+    top: 56px;
+    right: 60px;
+    z-index: 2;
+}
+.cover-content { position: relative; z-index: 3; }
+.cover-kicker {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    margin-bottom: 26px;
+}
+.cover-title {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 1.08;
+    color: var(--c-text);
+    margin-bottom: 18px;
+}
+.cover-subtitle {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.4;
+    color: var(--c-primary-d);
+    margin-bottom: 44px;
+    max-width: 520px;
+}
+.cover-divider {
+    width: 68px;
+    height: 3px;
+    background: var(--c-primary);
+    margin-bottom: 44px;
+}
+.cover-summary {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--c-text);
+    opacity: 0.85;
+    max-width: 470px;
+    margin-bottom: 44px;
+}
+.cover-meta { display: flex; flex-direction: column; gap: 10px; }
+.cover-meta-row { display: flex; align-items: baseline; gap: 14px; }
+.cover-meta-label {
+    width: 118px;
+    flex-shrink: 0;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+}
+.cover-meta-value { font-size: 13.5px; color: var(--c-text); font-weight: 500; }
+.cover-footer {
+    position: absolute;
+    bottom: 52px;
+    left: 64px;
+    right: 64px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--c-muted);
+    font-weight: 500;
+}
+.cover-footer .dot { color: var(--c-primary); }
+
+/* ============ MAIN CONTENT ============ */
+.main-content {
+    padding: 56px 65px 44px 65px;
+}
+
+/* --- TOC --- */
+.toc-wrap { break-after: page; }
+.toc-kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    margin-bottom: 10px;
+}
+.toc-title {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.toc-intro { font-size: 13.5px; color: var(--c-muted); line-height: 1.6; margin-bottom: 22px; }
+.toc-list { list-style: none; margin: 0; padding: 0; }
+.toc-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 4px;
+    border-bottom: 1px solid var(--c-border);
+    break-inside: avoid;
+}
+.toc-num {
+    width: 58px;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--c-primary);
+    text-transform: uppercase;
+}
+.toc-label { flex: 1; font-size: 14px; font-weight: 600; }
+.toc-dots { flex: 1; border-bottom: 1.5px dotted var(--c-border); transform: translateY(-3px); }
+.toc-page { width: 26px; text-align: right; font-size: 13px; font-weight: 700; color: var(--c-primary-d); }
+.toc-note {
+    margin-top: 24px;
+    background: var(--c-fill-2);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    break-inside: avoid;
+}
+.toc-note-label {
+    display: block;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--c-primary-d);
+    margin-bottom: 6px;
+}
+.toc-note-text { font-size: 12.5px; line-height: 1.65; color: var(--c-text); }
+
+/* --- Chapter header --- */
+.chapter-header {
+    break-after: avoid;
+    break-inside: avoid;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+.chapter-header.first { margin-top: 0; }
+.ch-tag {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    margin-bottom: 6px;
+}
+.ch-title {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.22;
+    margin: 0 0 10px 0;
+    color: var(--c-text);
+}
+.ch-divider { width: 52px; height: 3px; background: var(--c-primary); }
+
+h3.sub {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 22px 0 8px 0;
+    color: var(--c-primary-d);
+    break-after: avoid;
+}
+h4.minor {
+    font-size: 14.5px;
+    font-weight: 700;
+    margin: 16px 0 6px 0;
+    color: var(--c-text);
+    break-after: avoid;
+}
+p.body-text { margin: 0 0 11px 0; text-align: justify; }
+p.lead { font-size: 15.5px; color: var(--c-text); margin: 0 0 12px 0; text-align: justify; }
+strong { font-weight: 700; color: var(--c-primary-d); }
+
+/* --- Cards --- */
+.card {
+    background: #FFFFFF;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    padding: 15px 18px;
+    break-inside: avoid;
+    margin-bottom: 12px;
+}
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-primary-d);
+    margin-bottom: 5px;
+}
+.card-text { font-size: 13px; line-height: 1.62; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0 12px; }
+.grid-2 .card { margin-bottom: 0; }
+
+/* --- Copy blocks (WA templates, meta tags) --- */
+.copy-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+    margin: 14px 0 6px 0;
+    break-after: avoid;
+}
+.copy-block {
+    background: #FFFFFF;
+    border: 1px solid var(--c-border);
+    border-left: 3px solid var(--c-primary);
+    border-radius: 6px;
+    padding: 13px 16px;
+    font-size: 13px;
+    line-height: 1.62;
+    break-inside: avoid;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+    font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+.copy-block .mono { font-family: 'Liberation Mono', 'DejaVu Sans Mono', monospace; font-size: 12px; }
+.copy-hint { font-size: 12px; color: var(--c-muted); margin: -6px 0 14px 2px; line-height: 1.55; }
+
+/* --- Steps --- */
+.step { display: flex; gap: 12px; break-inside: avoid; margin-bottom: 12px; }
+.step-num {
+    flex-shrink: 0;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: var(--c-primary);
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.step-body { flex: 1; min-width: 0; }
+.step-title { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+.step-text { font-size: 13px; line-height: 1.6; text-align: justify; }
+
+/* --- Callouts --- */
+.tip-box {
+    background: var(--c-fill-2);
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    padding: 13px 17px;
+    break-inside: avoid;
+    margin: 12px 0 14px;
+}
+.tip-box .tip-label {
+    display: block;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--c-primary-d);
+    margin-bottom: 5px;
+}
+.tip-box .tip-text { font-size: 13px; line-height: 1.62; }
+
+/* --- Tables --- */
+table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 10px 0 14px; }
+table.data thead { display: table-header-group; }
+table.data th {
+    background: var(--c-thead);
+    color: var(--c-primary-d);
+    font-weight: 700;
+    text-align: left;
+    padding: 7px 10px;
+    border: 1px solid var(--c-border);
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+table.data td { padding: 7px 10px; border: 1px solid var(--c-border); vertical-align: top; line-height: 1.5; }
+table.data tr { break-inside: avoid; }
+table.data tbody tr:nth-child(even) td { background: var(--c-stripe); }
+table.keep { break-inside: avoid; }
+.tbl-caption { font-size: 11.5px; color: var(--c-muted); margin: -8px 0 14px 2px; line-height: 1.5; }
+
+/* --- Keyword pills --- */
+.pill-row { display: flex; flex-wrap: wrap; gap: 7px; max-width: 100%; margin: 8px 0 14px; }
+.pill {
+    display: inline-block;
+    background: var(--c-fill);
+    border: 1px solid var(--c-border);
+    border-radius: 999px;
+    padding: 3px 13px;
+    font-size: 12px;
+    color: var(--c-primary-d);
+    font-weight: 600;
+    break-inside: avoid;
+}
+.pill.secondary { background: var(--c-fill-2); color: var(--c-muted); font-weight: 500; }
+
+/* --- Wireframe (layout homepage) --- */
+.wire { margin: 12px 0 4px; }
+.wire-block {
+    border: 1.5px dashed var(--c-primary-l);
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding: 9px 14px;
+    margin-bottom: 7px;
+    break-inside: avoid;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+.wire-name { font-size: 12.5px; font-weight: 700; color: var(--c-primary-d); }
+.wire-desc { font-size: 11px; color: var(--c-muted); text-align: right; line-height: 1.45; }
+
+/* --- Sitemap tree --- */
+.tree { margin: 10px 0 14px; }
+.tree-root {
+    background: var(--c-primary);
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    break-inside: avoid;
+    margin-bottom: 8px;
+}
+.tree-branch { border-left: 2px solid var(--c-primary-l); margin-left: 22px; padding-left: 18px; }
+.tree-item {
+    background: #FFFFFF;
+    border: 1px solid var(--c-border);
+    border-radius: 5px;
+    padding: 7px 12px;
+    margin-bottom: 7px;
+    break-inside: avoid;
+    font-size: 12.5px;
+    line-height: 1.5;
+}
+.tree-item b { color: var(--c-primary-d); }
+.tree-item .url { font-family: 'Liberation Mono', 'DejaVu Sans Mono', monospace; font-size: 11px; color: var(--c-muted); }
+
+/* --- Checklist --- */
+.check-item { display: flex; gap: 10px; break-inside: avoid; margin-bottom: 7px; }
+.check-box {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid var(--c-primary);
+    border-radius: 3px;
+    margin-top: 4px;
+}
+.check-text { font-size: 13px; line-height: 1.55; }
+
+/* --- Menu list --- */
+.menu-item { display: flex; gap: 10px; break-inside: avoid; margin-bottom: 5px; font-size: 13px; line-height: 1.5; }
+.menu-bullet { color: var(--c-primary); font-weight: 800; }
+
+/* --- Ending --- */
+.ending {
+    width: 720px;
+    height: 1020px;
+    box-sizing: border-box;
+    break-before: page;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 64px;
+}
+.ending-bg { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
+.ending-bg .arc {
+    position: absolute;
+    left: -480px;
+    top: -560px;
+    width: 940px;
+    height: 940px;
+    border-radius: 50%;
+    background: rgba(179, 66, 42, 0.05);
+}
+.ending-content { position: relative; z-index: 3; }
+.ending-quote {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.45;
+    color: var(--c-text);
+    margin-bottom: 26px;
+    max-width: 520px;
+}
+.ending-sub { font-size: 14.5px; line-height: 1.7; color: var(--c-text); opacity: 0.85; max-width: 480px; margin-bottom: 46px; }
+.ending-contact { border-top: 1px solid var(--c-border); padding-top: 42px; max-width: 480px; }
+.ending-contact-row { display: flex; gap: 14px; margin-bottom: 10px; align-items: baseline; }
+.ending-contact-label {
+    width: 118px;
+    flex-shrink: 0;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--c-primary);
+}
+.ending-contact-value { font-size: 13.5px; font-weight: 500; }
+.ending-footer {
+    position: absolute;
+    bottom: 52px;
+    left: 64px;
+    right: 64px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--c-muted);
+    font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<div class="cover">
+    <div class="cover-bg">
+        <div class="arc"></div>
+        <div class="arc2"></div>
+    </div>
+    <svg class="cover-geo" width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <circle cx="50" cy="50" r="35" stroke="#B3422A" stroke-width="0.7" opacity="0.16"/>
+        <circle cx="60" cy="55" r="35" stroke="#B3422A" stroke-width="0.7" opacity="0.28"/>
+        <circle cx="70" cy="60" r="35" stroke="#B3422A" stroke-width="0.7" opacity="0.42"/>
+        <circle cx="100" cy="28" r="5" fill="#B3422A" opacity="0.45"/>
+        <circle cx="110" cy="44" r="2.5" fill="#B3422A" opacity="0.3"/>
+    </svg>
+    <div class="cover-content">
+        <div class="cover-kicker">Panduan Website &amp; SEO Lokal</div>
+        <div class="cover-title">Catering<br>Watiyem</div>
+        <div class="cover-subtitle">Jasa Catering Makanan Lezat &amp; Murah di Magetan</div>
+        <div class="cover-divider"></div>
+        <div class="cover-summary">
+            Panduan praktis membangun website catering yang bersih, menarik, dan hemat
+            anggaran&nbsp;— lengkap dengan copywriting siap pakai, struktur menu &amp; kisaran harga,
+            serta langkah demi langkah agar usaha Anda mudah ditemukan pelanggan baru di
+            Google Search dan Google Maps.
+        </div>
+        <div class="cover-meta">
+            <div class="cover-meta-row">
+                <div class="cover-meta-label">Area Layanan</div>
+                <div class="cover-meta-value">Magetan &amp; sekitarnya, Jawa Timur</div>
+            </div>
+            <div class="cover-meta-row">
+                <div class="cover-meta-label">Layanan</div>
+                <div class="cover-meta-value">Nasi Box · Prasmanan · Catering Harian · Snack Box</div>
+            </div>
+            <div class="cover-meta-row">
+                <div class="cover-meta-label">Kontak</div>
+                <div class="cover-meta-value">WhatsApp +62 857-0680-0961</div>
+            </div>
+        </div>
+    </div>
+    <div class="cover-footer">
+        <span>Edisi Pertama <span class="dot">·</span> Oktober 2026</span>
+        <span>Magetan <span class="dot">·</span> Jawa Timur</span>
+    </div>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+<div class="main-content">
+
+<!-- ========== DAFTAR ISI ========== -->
+<div class="toc-wrap">
+    <div class="toc-kicker">Isi Panduan</div>
+    <div class="toc-title">Daftar Isi</div>
+    <div class="toc-intro">Delapan bab tersusun urut&nbsp;— mulai dari strategi, struktur website, teks siap pakai,
+    harga, sampai panduan pendaftaran Google agar catering Anda cepat muncul di pencarian.</div>
+    <ul class="toc-list">
+        <li class="toc-row">
+            <span class="toc-num">BAB 1</span>
+            <span class="toc-label">Profil Usaha &amp; Strategi Website</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab1">1</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 2</span>
+            <span class="toc-label">Struktur Website &amp; Layout Homepage</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab2">3</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 3</span>
+            <span class="toc-label">Copywriting &amp; Teks SEO Lengkap</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab3">5</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 4</span>
+            <span class="toc-label">Menu, Paket &amp; Kisaran Harga</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab4">12</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 5</span>
+            <span class="toc-label">Google Search Console Langkah demi Langkah</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab5">15</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 6</span>
+            <span class="toc-label">Google Business Profile &amp; Google Maps</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab6">18</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 7</span>
+            <span class="toc-label">Checklist SEO Lokal &amp; Perawatan Rutin</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab7">21</span>
+        </li>
+        <li class="toc-row">
+            <span class="toc-num">BAB 8</span>
+            <span class="toc-label">Lampiran&nbsp;— Konten Siap Pakai &amp; FAQ</span>
+            <span class="toc-dots"></span>
+            <span class="toc-page" data-toc="bab8">24</span>
+        </li>
+    </ul>
+    <div class="toc-note">
+        <span class="toc-note-label">Cara Membaca Panduan Ini</span>
+        <div class="toc-note-text">
+            Bacakan BAB 1–2 dahulu untuk memahami konsep, lalu bangun website Anda sambil
+            menyalin teks dari BAB 3 dan 4. Setelah website tayang, ikuti BAB 5–6 pada hari
+            yang sama agar Google segera mulai mengindeks. Gunakan BAB 7 sebagai daftar
+            periksa mingguan, dan BAB 8 sebagai gudang konten cadangan. Seluruh teks yang
+            berlatar kotak putih bertanda <b>SIAP SALIN</b> boleh langsung di-copy-paste
+            ke website Anda tanpa diubah.
+        </div>
+    </div>
+</div>
+
+<!-- ========== BAB 1 ========== -->
+<div class="chapter-header first" id="bab1">
+    <div class="ch-tag">BAB 1</div>
+    <h2 class="ch-title">Profil Usaha &amp; Strategi Website</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Sebelum membahas tampilan dan teknis, kita samakan dulu pemahaman tentang
+usaha yang akan dibangun websitenya. Data profil inilah yang menjadi bahan bakar seluruh
+konten website&nbsp;— mulai dari judul halaman, deskripsi layanan, sampai pendaftaran Google
+Maps. Semakin lengkap dan konsisten data ini dipakai, semakin kuat pula posisi Catering
+Watiyem di pencarian lokal Magetan.</p>
+
+<h3 class="sub">1.1&nbsp;— Profil Resmi Usaha</h3>
+
+<table class="data keep">
+    <tbody>
+        <tr><td style="width:180px"><b>Nama Usaha</b></td><td>Catering Watiyem</td></tr>
+        <tr><td><b>Area Layanan</b></td><td>Magetan dan sekitarnya, Jawa Timur (radius ± 20 km: Kec. Barat, Kota Magetan, Sukomoro, Maospati, Kawedanan, Parang, Bendo, Panekan, Nguntoronadi, dan sekitarnya)</td></tr>
+        <tr><td><b>Layanan Utama</b></td><td>Nasi Box · Prasmanan Acara Kantor · Catering Harian · Snack Box</td></tr>
+        <tr><td><b>Target Audiens</b></td><td>Penyelenggara acara syukuran, acara kantor/instansi, acara keluarga, dan mahasiswa</td></tr>
+        <tr><td><b>Alamat</b></td><td>Setro, Tebon, Kec. Barat, Kabupaten Magetan, Jawa Timur 63395 (Kode Plus: CFR3+5JQ)</td></tr>
+        <tr><td><b>Kontak</b></td><td>WhatsApp / Telepon: +62 857-0680-0961 (wa.me/6285706800961)</td></tr>
+        <tr><td><b>Domain Rencana</b></td><td>cateringwatiyem.site (ekstensi .site&nbsp;— ekonomis untuk usaha lokal)</td></tr>
+    </tbody>
+</table>
+
+<p class="body-text">Nama domain <strong>cateringwatiyem.site</strong> dipilih dengan
+sengaja karena mengandung kata kunci usaha itu sendiri: <em>catering</em> dan nama brand
+<em>watiyem</em>. Domain seperti ini membantu Google memahami topik website Anda sejak
+detik pertama perayapnya membaca alamat situs. Ekstensi <em>.site</em> juga jauh lebih
+murah daripada <em>.com</em>&nbsp;— umumnya hanya sekitar Rp 20–50 ribu per tahun di
+registrar lokal&nbsp;— sehingga cocok dengan prinsip hemat anggaran yang Anda pegang.</p>
+
+<h3 class="sub">1.2&nbsp;— Tiga Tujuan Utama Website</h3>
+
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">1. Etalase yang Buka 24 Jam</div>
+        <div class="card-text">Website menjadi "toko tak bertoko" yang memajang menu,
+        harga, dan bukti kepuasan pelanggan setiap saat&nbsp;— malam hari, hari libur, bahkan
+        saat Anda sedang memasak. Calon pembeli bisa menimbang dulu tanpa perlu chat,
+        sehingga yang menghubungi Anda sudah yang benar-benar berminat.</div>
+    </div>
+    <div class="card">
+        <div class="card-title">2. Ditemukan di Google Lokal</div>
+        <div class="card-text">Ketika seseorang mengetik <em>"catering Magetan"</em> atau
+        <em>"nasi box terdekat"</em>, website Anda ikut berpeluang muncul. Pelanggan baru
+        yang tidak mengenal Anda sama sekali justru kebanyakan datang dari jalur
+        pencarian ini&nbsp;— bukan dari gerobak promosi yang mahal.</div>
+    </div>
+</div>
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">3. Pintu Pesan Langsung ke WhatsApp</div>
+        <div class="card-text">Setiap halaman mengarahkan pengunjung ke satu tujuan:
+        tombol WhatsApp hijau dengan pesan yang sudah terisi otomatis. Tidak ada
+        keranjang belanja, tidak ada formulir panjang&nbsp;— pola pemesanan khas UMKM
+        Indonesia yang paling cepat menutup transaksi.</div>
+    </div>
+    <div class="card">
+        <div class="card-title">Strategi Anggaran</div>
+        <div class="card-text">Biaya inti hanya tiga: domain <em>.site</em> (± Rp 20–50
+        ribu/tahun), hosting atau website builder sederhana (± Rp 300–600 ribu/tahun),
+        dan foto makanan yang bisa Anda ambil sendiri dengan HP. Seluruh panduan ini
+        dirancang agar bisa dijalankan tanpa menyewa programmer.</div>
+    </div>
+</div>
+
+<h3 class="sub">1.3&nbsp;— Konsep Desain "Bersih Modern"</h3>
+
+<p class="body-text">Gaya visual yang dipakai adalah <strong>bersih modern ala aplikasi
+pesan-antar makanan populer</strong>: latar putih bersih dengan aksen merah-oranye yang
+hangat dan menggugah selera, serta tombol WhatsApp hijau yang selalu menonjol. Riset
+pengalaman pengguna secara konsisten menunjukkan bahwa latar terang membuat foto
+makanan tampak lebih segar dan bersih, sementara aksen warna hangat memicu asosiasi
+rasa "gurih" dan "memasak di rumah". Hindari warna dingin dominan seperti biru tua —
+secara psikologis biru justru menekan selera makan.</p>
+
+<p class="body-text">Prinsip desain yang harus dipegang teguh: <strong>mobile-first</strong>.
+Lebih dari 85% pencarian lokal "catering terdekat" dilakukan dari ponsel, jadi desain
+disusun untuk layar HP dulu, baru diperluas ke layar komputer. Artinya huruf cukup besar
+(minimal 16 px untuk teks utama), tombol mudah ditekan jempol (minimal 44 px), foto
+memenuhi lebar layar, dan tombol WhatsApp mengambang di pojok bawah agar selalu terjangkau
+tanpa harus menggulir ke bawah.</p>
+
+<div class="tip-box">
+    <span class="tip-label">Prinsip Hemat yang Penting</span>
+    <div class="tip-text">Jangan tergoda memasang animasi berlebihan, slider otomatis
+    bertubi-tubi, atau musik latar. Selain memperlambat website (yang merusak peringkat
+    Google), elemen-elemen itu juga menaikkan kuota data pengunjung HP. Website yang
+    cepat, ringan, dan langsung menampilkan foto makanan + tombol pesan justru
+    menghasilkan pesanan lebih banyak.</div>
+</div>
+
+<!-- ========== BAB 2 ========== -->
+<div class="chapter-header" id="bab2">
+    <div class="ch-tag">BAB 2</div>
+    <h2 class="ch-title">Struktur Website &amp; Layout Homepage</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Struktur website Catering Watiyem dibuat sengaja ramping: hanya lima
+halaman inti. Struktur kecil berarti pengunjung tidak tersesat, Google mudah memahami
+seluruh isi situs, dan perawatan konten jauh lebih ringan untuk dijalankan sendirian.
+Pada bab ini Anda mendapat peta situs lengkap dan tata letak homepage blok demi blok —
+persis seperti urutan yang dipakai website demo yang menyertai panduan ini.</p>
+
+<h3 class="sub">2.1&nbsp;— Peta Situs (Sitemap) Lima Halaman</h3>
+
+<div class="tree">
+    <div class="tree-root">🏠 Beranda&nbsp;— cateringwatiyem.site</div>
+    <div class="tree-branch">
+        <div class="tree-item"><b>Layanan</b>&nbsp;— 4 layanan utama + deskripsi singkat <span class="url">/layanan</span></div>
+        <div class="tree-item"><b>Menu &amp; Harga</b>&nbsp;— tabel paket per kategori + tombol pesan <span class="url">/menu-harga</span></div>
+        <div class="tree-item"><b>Tentang Kami</b>&nbsp;— cerita dapur Ibu Watiyem, kebersihan, NAP <span class="url">/tentang-kami</span></div>
+        <div class="tree-item"><b>Kontak / Cara Pesan</b>&nbsp;— WhatsApp, alamat, jam operasional, peta <span class="url">/kontak</span></div>
+    </div>
+</div>
+
+<p class="body-text">Setiap halaman punya satu tugas spesifik. <strong>Beranda</strong>
+menjual kesan pertama dan meringkas semuanya. <strong>Layanan</strong> menjelaskan empat
+produk utama secara lebih dalam. <strong>Menu &amp; Harga</strong> adalah halaman yang
+paling sering dibuka ulang oleh calon pembeli&nbsp;— berisi tabel paket lengkap beserta
+tombol pesan per paket. <strong>Tentang Kami</strong> membangun kepercayaan lewat cerita
+dan foto dapur yang bersih. <strong>Kontak</strong> memudahkan pemesanan sekaligus
+menampung alamat dan peta agar Google memvalidasi lokasi usaha Anda. Lima halaman ini
+nanti juga menjadi lima baris pada berkas <em>sitemap.xml</em> yang dikirim ke Google
+Search Console di BAB 5.</p>
+
+<h3 class="sub">2.2&nbsp;— Tata Letak Homepage, Blok demi Blok</h3>
+
+<p class="body-text">Homepage disusun mengikuti alur berpikir pembeli: menarik perhatian
+(judul + foto), membangun kepercayaan (keunggulan + testimoni), menjelaskan produk (paket
+menu), memudahkan tindakan (alur pesan + tombol WhatsApp). Berikut urutan delapan blok
+dari atas ke bawah&nbsp;— angka persentase menunjukkan perkiraan tinggi tiap blok pada layar
+ponsel:</p>
+
+<div class="wire">
+    <div class="wire-block">
+        <span class="wire-name">1 · Header + Navigasi (sticky)</span>
+        <span class="wire-desc">Logo "Catering Watiyem" · menu 5 halaman · tombol WA kecil</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">2 · Banner Utama&nbsp;— ± 85% tinggi layar HP</span>
+        <span class="wire-desc">Headline SEO + sub-headline + 2 tombol (Pesan WA, Lihat Menu) di atas foto makanan</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">3 · Keunggulan&nbsp;— 6 kartu</span>
+        <span class="wire-desc">Fresh tiap hari · harga bersahabat · tepat waktu · porsi mantap · higienis · fleksibel</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">4 · Paket Menu Populer&nbsp;— 4 kartu</span>
+        <span class="wire-desc">Nasi Box · Prasmanan · Catering Harian · Snack Box + harga "mulai Rp"</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">5 · Alur Pemesanan&nbsp;— 4 langkah</span>
+        <span class="wire-desc">Chat WA → konsultasi menu → DP &amp; jadwal → masak &amp; antar</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">6 · Testimoni&nbsp;— 6 kartu berbintang</span>
+        <span class="wire-desc">Nama + asal pelanggan, pesan singkat, rating 5 bintang</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">7 · Banner Ajakan (CTA)&nbsp;— WhatsApp</span>
+        <span class="wire-desc">Kalimat penutup menggugah + tombol hijau besar "Pesan via WhatsApp"</span>
+    </div>
+    <div class="wire-block">
+        <span class="wire-name">8 · Footer</span>
+        <span class="wire-desc">Alamat lengkap · WA · jam buka · area layanan · tautan 5 halaman</span>
+    </div>
+</div>
+
+<p class="body-text">Di luar urutan tersebut, tambahkan satu elemen penting yang melayang:
+<strong>tombol WhatsApp mengambang</strong> (lingkaran hijau berlogo WA, pojok kanan bawah)
+yang tetap tampil di posisi yang sama saat halaman digulir. Elemen ini terbukti menjadi
+jalur pesan tersering pada website UMKM Indonesia karena pengunjung tidak perlu mencari
+cara menghubungi Anda&nbsp;— tombolnya selalu ada di sana, cukup satu ketukan jempol.</p>
+
+<h3 class="sub">2.3&nbsp;— Anatomi Banner Utama (Blok Paling Penting)</h3>
+
+<p class="body-text">Banner utama adalah lima detik pertama yang menentukan pengunjung
+bertahan atau pergi. Susunannya wajib memuat empat elemen: foto makanan asli Anda yang
+paling fotogenik sebagai latar, <strong>headline SEO</strong> berisi kata kunci
+"catering Magetan" (teks pada gambar, bukan gambar semata&nbsp;— Google membaca teks),
+<strong>sub-headline</strong> yang menyebut keempat layanan, dan dua tombol berdampingan:
+tombol hijau WhatsApp sebagai aksi utama dan tombol sekunder "Lihat Menu &amp; Harga"
+untuk pengunjung yang masih menimbang. Contoh teks lengkapnya sudah disiapkan di BAB 3.</p>
+
+<h3 class="sub">2.4&nbsp;— Struktur Halaman Menu &amp; Harga</h3>
+
+<p class="body-text">Halaman menu disusun per kategori layanan, masing-masing berisi
+tabel tiga tingkat paket: <em>Hemat</em>, <em>Standar</em>, dan <em>Premium</em>. Setiap
+baris tabel menampilkan nama paket, isi menu singkat, harga per porsi, dan catatan
+minimal order. Di bawah setiap tabel letakkan tombol WhatsApp yang telah terisi pesan
+otomatis sesuai kategori&nbsp;— misalnya tombol pada tabel Nasi Box langsung membuka chat
+berisi format pesan nasi box yang sudah terisi pilihan paket (format pesan ini ada di
+BAB 3.7). Trik ini membuat calon pembeli tinggal melengkapi tanggal dan jumlah saja.</p>
+
+<p class="body-text">Tambahkan pula tiga elemen pelengkap di halaman menu: kotak
+<strong>"Menu Minggu Ini"</strong> yang Anda perbarui rutin (sinyal bagi Google bahwa
+website aktif), catatan <strong>"harga dapat berubah&nbsp;— konfirmasi terbaru via WA"</strong>
+sebagai pengaman, serta <strong>tautan ke Google Maps</strong> agar pembeli luar kota
+yakin area layanan Anda mencakup lokasi acaranya. Foto asli untuk setiap paket sebaiknya
+diambil dari atas (sudut datar) dengan cahaya siang dekat jendela&nbsp;— peralatan HP biasa
+sudah lebih dari cukup.</p>
+
+<!-- ========== BAB 3 ========== -->
+<div class="chapter-header" id="bab3">
+    <div class="ch-tag">BAB 3</div>
+    <h2 class="ch-title">Copywriting &amp; Teks SEO Lengkap</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Seluruh teks pada bab ini sudah ditulis dengan gaya ramah dan menggugah
+selera, lalu diberi bumbu kata kunci lokal Magetan. Teks berlatar kotak putih boleh
+langsung disalin ke website. Kalimatnya sengaja dibuat mengalir seperti obrolan —
+karena pembeli catering memutuskan lewat perasaan hangat, bukan lewat daftar fitur
+yang kaku.</p>
+
+<h3 class="sub">3.1&nbsp;— Headline &amp; Sub-Headline Banner Utama</h3>
+
+<p class="body-text">Headline utama (tag H1) hanya boleh muncul satu kali per halaman dan
+wajib mengandung kata kunci utama. Pilih <strong>variasi A</strong> untuk pemakaian
+standar; variasi B dan C disediakan sebagai cadangan ketika Anda ingin menguji mana yang
+paling banyak mendatangkan klik dari Google.</p>
+
+<div class="copy-label">Variasi A&nbsp;— Rekomendasi Utama</div>
+<div class="copy-block"><b>Headline (H1):</b> Jasa Catering Makanan Lezat &amp; Murah di Magetan
+<b>Sub-headline:</b> Nasi Box, Prasmanan, Catering Harian, dan Snack Box&nbsp;— dimasak fresh
+setiap hari oleh Catering Watiyem untuk acara syukuran, acara kantor, keluarga, dan
+mahasiswa di Magetan dan sekitarnya. Pesan semudah chat WhatsApp!</div>
+
+<div class="copy-label">Variasi B&nbsp;— Aksen Masakan Rumahan</div>
+<div class="copy-block"><b>Headline (H1):</b> Catering Magetan&nbsp;— Masakan Rumahan Lezat, Harga Bersahabat
+<b>Sub-headline:</b> Dari dapur Ibu Watiyem di Tebon, Magetan Barat: nasi box mulai Rp15 ribu,
+prasmanan lengkap untuk acara kantor, langganan makan siang, sampai snack box rapat Anda.</div>
+
+<div class="copy-label">Variasi C&nbsp;— Gaya Tanya (Banyak Diklik)</div>
+<div class="copy-block"><b>Headline (H1):</b> Butuh Nasi Box atau Prasmanan Enak di Magetan?
+<b>Sub-headline:</b> Catering Watiyem siap masak untuk acara Anda&nbsp;— mulai 20 box, tepat waktu,
+dan menunya bisa disesuaikan budget. Konsultasi gratis lewat WhatsApp sekarang.</div>
+
+<h3 class="sub">3.2&nbsp;— Kata Kunci Lokal (Keyword Map)</h3>
+
+<p class="body-text">Kata kunci berikut adalah "alamat digital" usaha Anda. Gunakan kata
+kunci primer pada judul halaman (H1) dan meta title; sebarkan kata kunci sekunder secara
+alami di paragraf, judul bagian, nama file foto (contoh: <em>nasi-box-magetan.jpg</em>),
+dan teks alternatif gambar. Jangan menumpuk kata kunci yang sama lebih dari tiga kali
+dalam satu paragraf&nbsp;— Google menilai itu sebagai spam keyword.</p>
+
+<h4 class="minor">Kata Kunci Primer (untuk H1 &amp; Meta Title)</h4>
+<div class="pill-row">
+    <span class="pill">catering magetan</span>
+    <span class="pill">jasa catering magetan</span>
+    <span class="pill">catering magetan murah</span>
+    <span class="pill">nasi box magetan</span>
+    <span class="pill">katering magetan</span>
+</div>
+
+<h4 class="minor">Kata Kunci Sekunder (sebar di isi halaman)</h4>
+<div class="pill-row">
+    <span class="pill secondary">nasi box murah magetan</span>
+    <span class="pill secondary">prasmanan acara kantor magetan</span>
+    <span class="pill secondary">snack box magetan</span>
+    <span class="pill secondary">catering harian magetan</span>
+    <span class="pill secondary">catering syukuran magetan</span>
+    <span class="pill secondary">tumpengan magetan</span>
+    <span class="pill secondary">catering terdekat</span>
+    <span class="pill secondary">makanan acara magetan</span>
+    <span class="pill secondary">langganan makan siang magetan</span>
+    <span class="pill secondary">catering kantor magetan</span>
+</div>
+
+<h4 class="minor">Kata Kunci Ejaan Alternatif (tangkap juga pencari yang salah tik)</h4>
+<div class="pill-row">
+    <span class="pill secondary">katering magetan</span>
+    <span class="pill secondary">catering madgetan</span>
+    <span class="pill secondary">nasbox magetan</span>
+    <span class="pill secondary">jasa katering daerah magetan</span>
+</div>
+
+<h3 class="sub">3.3&nbsp;— Meta Title &amp; Meta Description per Halaman</h3>
+
+<p class="body-text">Meta title dibatasi ± 60 karakter dan meta description ± 155 karakter
+— potongan inilah yang tampil di hasil pencarian Google, jadi anggap iklan mini gratis.
+Tulis meta description sebagai kalimat penawaran yang mengundang klik, bukan sekadar
+definisi. Salin langsung teks berikut ke pengaturan SEO halaman Anda:</p>
+
+<div class="copy-label">Halaman Beranda</div>
+<div class="copy-block"><b>Meta title:</b> Catering Watiyem&nbsp;— Jasa Catering Lezat &amp; Murah di Magetan
+<b>Meta description:</b> Jasa catering Magetan untuk acara syukuran, kantor &amp; keluarga.
+Nasi box mulai Rp15rb, prasmanan, snack box &amp; catering harian. Pesan gampang via WhatsApp!</div>
+
+<div class="copy-label">Halaman Layanan</div>
+<div class="copy-block"><b>Meta title:</b> Layanan Catering Watiyem&nbsp;— Nasi Box, Prasmanan, Harian
+<b>Meta description:</b> Empat layanan catering di Magetan: nasi box acara, prasmanan kantor,
+catering harian makan siang &amp; snack box rapat. Menu fleksibel sesuai budget Anda.</div>
+
+<div class="copy-label">Halaman Menu &amp; Harga</div>
+<div class="copy-block"><b>Meta title:</b> Menu &amp; Harga Catering Magetan&nbsp;— Catering Watiyem
+<b>Meta description:</b> Lihat menu &amp; harga catering Magetan: nasi box Rp15–22rb, prasmanan
+Rp28–45rb/pax, snack box mulai Rp8rb. Harga transparan, tanpa biaya tersembunyi.</div>
+
+<div class="copy-label">Halaman Tentang Kami</div>
+<div class="copy-block"><b>Meta title:</b> Tentang Catering Watiyem&nbsp;— Dapur Rumahan di Magetan
+<b>Meta description:</b> Kenalan dengan dapur Catering Watiyem di Tebon, Magetan Barat. Masakan
+rumahan, bersih, porsi jujur, dan sudah dipercaya ribuan pelanggan di Magetan &amp; sekitarnya.</div>
+
+<div class="copy-label">Halaman Kontak</div>
+<div class="copy-block"><b>Meta title:</b> Kontak &amp; Cara Pesan&nbsp;— Catering Watiyem Magetan
+<b>Meta description:</b> Cara pesan catering di Magetan: chat WhatsApp 0857-0680-0961,
+konsultasi gratis, DP 50%. Alamat: Setro, Tebon, Kec. Barat, Magetan. Melayani ± 20 km.</div>
+
+<h3 class="sub">3.4&nbsp;— Deskripsi Singkat Empat Layanan</h3>
+
+<p class="body-text">Empat deskripsi berikut dipakai pada kartu layanan di homepage dan
+diperluas di halaman Layanan. Panjangnya sengaja 2–3 kalimat agar enak dibaca cepat,
+namun sudah mengandung kata kunci, harga awal, dan ajakan bertindak.</p>
+
+<div class="copy-label">Nasi Box</div>
+<div class="copy-block">Nasi box Catering Watiyem adalah jawaban praktis untuk rapat kantor,
+acara syukuran, pengajian, hingga seminar di Magetan. Setiap box berisi nasi hangat, lauk
+pilihan&nbsp;— ayam bumbu rujak, semur, atau telur balado&nbsp;— sayur segar, sambal, dan kerupuk,
+dimasak fresh di pagi harinya. Paket hemat mulai Rp15.000 dengan minimal order 20 box,
+dan pengantaran meliputi Magetan serta sekitarnya.</div>
+
+<div class="copy-label">Prasmanan Acara Kantor</div>
+<div class="copy-block">Saat kantor atau instansi Anda mengadakan gathering, halal bihalal,
+rapat akhir tahun, atau syukuran, prasmanan Catering Watiyem hadir dengan paket lengkap
+mulai Rp28.000/pax: nasi, lauk utama, sayur, sambal, hingga dessert dan minuman. Stand
+prasmanan kami dirapikan dengan etalase tertutup agar tetap higienis sepanjang acara.
+Minimal pemesanan 50 pax&nbsp;— konsultasi menu dan anggaran langsung lewat WhatsApp.</div>
+
+<div class="copy-label">Catering Harian</div>
+<div class="copy-block">Catering harian makan siang untuk karyawan, anak kos, dan keluarga
+di area Magetan. Menu berganti setiap hari Senin–Sabtu, dimasak pagi hari tanpa bumbu
+instan berlebihan, dan diantar tepat waktu sekitar pukul 11.00. Mulai Rp25.000/hari,
+atau hemat lebih dengan paket langganan mingguan. Berhenti kapan saja tanpa denda.</div>
+
+<div class="copy-label">Snack Box</div>
+<div class="copy-block">Snack box untuk coffee break rapat, seminar, dan pelatihan di
+Magetan. Pilihan risoles, pastel, lumpia, dan kudapan gurih-manis lain dibuat pada hari
+yang sama sehingga tetap renyah sampai sesi terakhir acara Anda. Mulai Rp8.000/box,
+isi bisa dicampur sesuai permintaan, minimal order 30 box. Pesan H-1 saja juga bisa!</div>
+
+<h3 class="sub">3.5&nbsp;— Kalimat Penawaran di Homepage (Copy Paragraf)</h3>
+
+<p class="body-text">Di bawah banner utama, tambahkan paragraf pembuka berikut untuk
+memberi napas "manusia" sebelum pengunjung menabrak deretan kartu produk. Teks ini juga
+difungsi Google sebagai deskripsi konteks halaman Anda:</p>
+
+<div class="-copy-wrap" style="break-inside: avoid;">
+<div class="copy-label">Paragraf Pembuka Homepage</div>
+<div class="copy-block">Cari catering di Magetan yang masakannya enak, harganya masuk
+akal, dan tidak pernah telat mengantar? Anda sudah ketemu tempatnya. Catering Watiyem
+adalah dapur rumahan di Tebon, Magetan Barat, yang setiap harinya menyiapkan nasi box,
+prasmanan, langganan makan siang, dan snack box untuk warga Magetan dan sekitarnya.
+Semua menu dimasak fresh, bumbunya diracik sendiri, dan porsinya jujur&nbsp;— karena bagi
+kami, acara Anda adalah reputasi kami. Tinggal chat, atur menunya, dan biarkan dapur
+Kami yang sibuk. 😊</div>
+</div>
+
+<h3 class="sub">3.6&nbsp;— Call to Action (CTA) &amp; Kalimat Tombol</h3>
+
+<p class="body-text">CTA yang baik menyebut manfaat singkat + kata kerja perintah + kata
+"WhatsApp". Hindari label generik seperti "Kirim" atau "Lanjut". Berikut delapan
+variasi CTA yang bisa Anda putar agar tidak monoton di tiap bagian halaman:</p>
+
+<div class="pill-row">
+    <span class="pill">Pesan via WhatsApp Sekarang</span>
+    <span class="pill">Chat Gratis, Atur Menu bareng</span>
+    <span class="pill">Konsultasi Menu &amp; Harga</span>
+    <span class="pill">Saya Mau Pesan Nasi Box</span>
+    <span class="pill">Hitung Budget Acara Saya</span>
+    <span class="pill">Cek Tanggal Tersedia</span>
+    <span class="pill">Pesan Hari Ini, Dimasak Besok</span>
+    <span class="pill">Lihat Menu &amp; Harga Lengkap</span>
+</div>
+
+<h3 class="sub">3.7&nbsp;— Format Pesan WhatsApp Otomatis</h3>
+
+<p class="body-text">Inilah senjata rahasia panduan ini: pesan WhatsApp yang terisi
+otomatis ketika tombol ditekan. Cara kerjanya sederhana&nbsp;— tombol mengarah ke tautan
+<em>wa.me</em> dengan parameter teks yang sudah di-encode. Contoh untuk tombol utama:</p>
+
+<div class="copy-label">Struktur Tautan</div>
+<div class="copy-block"><span class="mono">https://wa.me/6285706800961?text=Halo%20Catering%20Watiyem...</span></div>
+<p class="copy-hint">Angka 6285706800961 adalah nomor WA Anda tanpa tanda + dan tanpa
+nol depan. Teks pesan wajib di-encode (spasi menjadi %20, tanda + menjadi %2B, dsb.) —
+gunakan encoder gratis di google.com/search?q=url+encoder jika belum punya.</p>
+
+<p class="body-text">Berikut lima draf pesan lengkap&nbsp;— salin teksnya, encode, lalu tempel
+pada parameter <em>text=</em> milik tombol yang sesuai. Bagian dalam kurung siku sengaja
+dibuat kosong agar pembeli tinggal mengisinya, sehingga Anda langsung menerima data
+penting sejak chat pertama:</p>
+
+<div class="copy-label">Tombol Umum (Banner &amp; Tombol Mengambang)</div>
+<div class="copy-block">Halo Catering Watiyem 🙏
+Saya mau tanya-tanya dulu tentang catering untuk acara saya di Magetan.
+Boleh dikirim menu dan harga terbaru? Terima kasih!</div>
+
+<div class="copy-label">Tombol Kartu Nasi Box</div>
+<div class="copy-block">Halo Catering Watiyem 🙏
+Saya mau pesan Nasi Box untuk acara:
+• Tanggal acara: [tanggal]
+• Jumlah box: [jumlah]
+• Paket: Hemat / Standar / Premium
+• Lokasi pengantaran: [alamat]
+Mohon info total harga dan ketersediaan tanggalnya ya. Terima kasih!</div>
+
+<div class="copy-label">Tombol Kartu Prasmanan</div>
+<div class="copy-block">Halo Catering Watiyem 🙏
+Saya mau konsultasi Prasmanan untuk acara kantor/instansi:
+• Nama instansi: [nama]
+• Tanggal acara: [tanggal]
+• Estimasi jumlah pax: [jumlah]
+• Budget per pax: [nominal]
+• Lokasi acara: [alamat]
+Mohon dibantu rekomendasi menu terbaiknya ya. Terima kasih!</div>
+
+<div class="copy-label">Tombol Kartu Catering Harian</div>
+<div class="copy-block">Halo Catering Watiyem 🙏
+Saya tertarik Catering Harian (langganan makan siang):
+• Nama: [nama]
+• Alamat pengantaran: [alamat]
+• Waktu makan siang yang diinginkan: [jam]
+• Mulai langganan: [tanggal]
+• Alergi / menu yang dihindari: [isi jika ada]
+Mohon info paket mingguannya ya. Terima kasih!</div>
+
+<div class="copy-label">Tombol Kartu Snack Box</div>
+<div class="copy-block">Halo Catering Watiyem 🙏
+Saya mau pesan Snack Box untuk rapat/seminar:
+• Tanggal: [tanggal]
+• Jumlah box: [jumlah]
+• Pilihan isi: [risoles / pastel / lumpia / campur]
+• Lokasi: [alamat]
+Mohon info harga dan minimal ordernya ya. Terima kasih!</div>
+
+<h3 class="sub">3.8&nbsp;— Enam Testimoni Contoh (GANTI dengan Asli Anda)</h3>
+
+<div class="tip-box">
+    <span class="tip-label">Penting Sebelum Tayang</span>
+    <div class="tip-text">Testimoni di bawah ini adalah <b>contoh fiktif</b> untuk
+    memperlihatkan format penulisan yang baik. Sebelum website tayang, gantilah dengan
+    testimoni asli&nbsp;— screenshot chat WhatsApp yang diizinkan pelanggan, atau kutipan
+    ulasan Google Maps Anda. Testimoni palsu yang ketahuan justru meruntuhkan kepercayaan
+    dan berisiko melanggar ketentuan iklan.</div>
+</div>
+
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Rina, Staf Kantor Kab. Magetan</div>
+        <div class="card-text">"Nasi boxnya ludes duluan di rapat kerja! Ayam semurnya
+        empuk dan bumbunya nampol. Tim kami sudah repeat order tiga kali bulan ini."</div>
+    </div>
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Pak Budi, Warga Kec. Barat</div>
+        <div class="card-text">"Tumpengan syukuran rumah jadi lancar. Ibu Watiyem
+        responsif banget di WA, menunya disesuaikan dengan budget kami. Recommended!"</div>
+    </div>
+</div>
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Dimas, Mahasiswa Magetan</div>
+        <div class="card-text">"Langganan catering harian satu bulan, menu ganti-ganti
+        terus jadi nggak bosan. Harga paling bersahabat buat anak kos."</div>
+    </div>
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Ibu Ratna, Admin Instansi</div>
+        <div class="card-text">"Prasmanan 80 pax untuk acara kantor selesai tepat waktu,
+        semua peserta puas. Penataan stand rapi dan petugasnya ramah."</div>
+    </div>
+</div>
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Mbak Sari, Panitia Seminar</div>
+        <div class="card-text">"Snack box untuk seminar kami aman&nbsp;— sampai sesi kedua
+        masih renyah. Pastel dan risolesnya jadi bahan pujian peserta."</div>
+    </div>
+    <div class="card">
+        <div class="card-title">★★★★★&nbsp;— Keluarga Besar Bu Sri</div>
+        <div class="card-text">"Pesan mendadak H-1 tetap dilayani ramah. Porsi pas tidak
+        pelit, dan pengantaran lebih awal dari jadwal. Terima kasih Catering Watiyem!"</div>
+    </div>
+</div>
+
+<!-- ========== BAB 4 ========== -->
+<div class="chapter-header" id="bab4">
+    <div class="ch-tag">BAB 4</div>
+    <h2 class="ch-title">Menu, Paket &amp; Kisaran Harga</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Struktur harga di bab ini mengikuti pola tiga tingkat&nbsp;— Hemat, Standar,
+Premium&nbsp;— yang sudah teruji di pasar catering Jawa Timur: pembeli bergegas langsung ke
+paket termurah, pembuat acara kantor mencari nilai terbaik di tengah, dan pelanggan
+acara besar memilih paling lengkap. Semua angka adalah kisaran realistis pasar Magetan
+per Oktober 2026; sesuaikan akhir dengan harga bahan pangan di pasar setempat dan
+kalkulasi dapur Anda sendiri.</p>
+
+<h3 class="sub">4.1&nbsp;— Cara Cepat Menghitung Harga Jual</h3>
+
+<p class="body-text">Rumus paling sederhana yang biasa dipakai UMKM catering: <strong>harga
+jual = HPP × 3</strong>, ditambah komponen kemasan dan ongkos antar. HPP (harga pokok
+penjualan) dihitung dari resep&nbsp;— misalnya satu porsi ayam bumbu rujak memakai setengah
+ekor ayam Rp 8.000, bumbu Rp 1.500, beras Rp 2.500, sayur Rp 2.000, dan box Rp 1.000,
+total Rp 15.000; maka harga jual wajar sekitar Rp 45.000... yang jelas terlalu mahal
+untuk pasar nasi box Magetan. Karena itu paket hemat memakai lauk yang lebih ekonomis
+(telur, tempe, ayam dibagi 4), sementara paket premium yang mendekati rumus ×3 dijual
+ke segmen acara besar. Jadikan rumus ini alat uji, bukan palu: <strong>batas bawah
+aman adalah HPP × 2</strong>, dan jangan pernah menjual di bawah itu hanya demi
+menangkan tender&nbsp;— ruginya akan muncul di kualitas.</p>
+
+<h3 class="sub">4.2&nbsp;— Paket Nasi Box (min. order 20 box)</h3>
+
+<table class="data">
+    <thead>
+        <tr>
+            <th style="width:105px">Paket</th>
+            <th style="width:92px">Harga/box</th>
+            <th>Isi Menu</th>
+            <th style="width:118px">Paling Cocok</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Hemat</b></td>
+            <td>Rp 15.000</td>
+            <td>Nasi · ayam bumbu kuning (½ potong) · tempe orek · sayur capcay · sambal · kerupuk</td>
+            <td>Pengajian, arisan, rapat rutin kantor</td>
+        </tr>
+        <tr>
+            <td><b>Standar</b></td>
+            <td>Rp 18.000</td>
+            <td>Nasi · ayam semur (½ potong) · perkedel · sayur asem · sambal terasi · kerupuk</td>
+            <td>Rapat kerja, syukuran keluarga, acara sekolah</td>
+        </tr>
+        <tr>
+            <td><b>Premium</b></td>
+            <td>Rp 22.000</td>
+            <td>Nasi · ayam bumbu rujak (1 potong) · telur balado · tempe bacem · sayur lodeh · sambal teri kacang · kerupuk · buah potong</td>
+            <td>Acara instansi, gathering, hari besar</td>
+        </tr>
+    </tbody>
+</table>
+<p class="tbl-caption">Semua paket termasuk box kuat, sendok + tissue, dan stiker label menu.
+Pilihan lauk bisa ditukar antar paket&nbsp;— konfirmasi via WhatsApp.</p>
+
+<h3 class="sub">4.3&nbsp;— Paket Prasmanan Acara (min. 50 pax)</h3>
+
+<table class="data">
+    <thead>
+        <tr>
+            <th style="width:105px">Paket</th>
+            <th style="width:96px">Harga/pax</th>
+            <th>Isi Buffet</th>
+            <th style="width:112px">Paling Cocok</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Prasmanan 1</b></td>
+            <td>Rp 28.000</td>
+            <td>Nasi putih · ayam bumbu kecap · sayur asem · tempe orek · sambal · kerupuk · air mineral gelas</td>
+            <td>Syukuran, pengajian besar, selamatan</td>
+        </tr>
+        <tr>
+            <td><b>Prasmanan 2</b></td>
+            <td>Rp 35.000</td>
+            <td>Nasi putih · ayam goreng bumbu · semur telur · sayur capcay · perkedel · sambal · kerupuk · pudding</td>
+            <td>Acara kantor, halal bihalal, gathering</td>
+        </tr>
+        <tr>
+            <td><b>Prasmanan 3</b></td>
+            <td>Rp 45.000</td>
+            <td>Nasi kuning · ayam bumbu rujak · rendang/semur daging · udang sambal goreng · sayur · telur balado ·emping · fruit punch · dessert</td>
+            <td>Acara resmi instansi, pernikahan, khitanan</td>
+        </tr>
+    </tbody>
+</table>
+<p class="tbl-caption">Harga termasuk etalase/box buffet, alat makan sekali pakai, dan petugas
+penata stand (untuk paket 2–3). Tumpengan grand + nasi kuning komplit + Rp 350.000/unit.</p>
+
+<h3 class="sub">4.4&nbsp;— Catering Harian (Langganan Makan Siang)</h3>
+
+<table class="data keep">
+    <thead>
+        <tr>
+            <th style="width:150px">Paket</th>
+            <th style="width:118px">Harga</th>
+            <th>Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Harian Lepas</b></td>
+            <td>Rp 27.500/hari</td>
+            <td>Nasi + lauk + sayur + sambal, pesan per hari (konfirmasi H-1 pukul 21.00)</td>
+        </tr>
+        <tr>
+            <td><b>Mingguan (6 hari)</b></td>
+            <td>Rp 150.000/minggu</td>
+            <td>Hemat ± 10%, menu Senin–Sabtu berganti, antar jam 11.00–12.00</td>
+        </tr>
+        <tr>
+            <td><b>Bulanan (24 hari)</b></td>
+            <td>Rp 560.000/bulan</td>
+            <td>Hemat ± 15%, bebas tukar menu, berhenti kapan saja tanpa denda</td>
+        </tr>
+    </tbody>
+</table>
+<p class="tbl-caption">Contoh rotasi mingguan: Senin ayam kecap + sayur asem · Selasa telur
+balado + capcay · Rabu ayam bumbu kuning + tumis buncis · Kamis tempe bacem + sayur lodeh ·
+Jumat ikan tongkol sambal + kangkung · Sabtu ayam kecap pedas + bihun sayur.</p>
+
+<h3 class="sub">4.5&nbsp;— Snack Box (min. order 30 box)</h3>
+
+<table class="data">
+    <thead>
+        <tr>
+            <th style="width:105px">Paket</th>
+            <th style="width:92px">Harga/box</th>
+            <th>Isi</th>
+            <th style="width:118px">Paling Cocok</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Manis-Gurih 2</b></td>
+            <td>Rp 8.000</td>
+            <td>2 snack pilihan (risoles / pastel / lumpia / pisang goreng) + tissue</td>
+            <td>Coffee break rapat, arisan</td>
+        </tr>
+        <tr>
+            <td><b>Kombi 3</b></td>
+            <td>Rp 10.000</td>
+            <td>3 snack campur + teh kotak / air mineral 220 ml + tissue</td>
+            <td>Seminar, pelatihan, workshop</td>
+        </tr>
+        <tr>
+            <td><b>Premium 3+</b></td>
+            <td>Rp 13.000</td>
+            <td>3 snack premium (risoles ragout, pastel ayam, mini burger / eclairs) + jus kemasan + napkin &amp; stiker acara</td>
+            <td>Acara instansi, launching, peresmian</td>
+        </tr>
+    </tbody>
+</table>
+<p class="tbl-caption">Tersedia menu satuan untuk rapat kecil: lemper Rp 2.500, risoles
+Rp 3.000, pastel Rp 3.000, arem-arem Rp 4.000 (min. 20 pcs per jenis).</p>
+
+<h3 class="sub">4.6&nbsp;— Paket Bundling Segmen Acara</h3>
+
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">Paket Syukuran Keluarga&nbsp;— mulai Rp 1.450.000</div>
+        <div class="card-text">Untuk 50 tamu: tumpengan grand + nasi box 50 premium (atau
+        prasmanan 1) + snack tamu 30 box + es teh / fruit punch. Termasuk tata tumpengan,
+        piring &amp; alat makan, serta pengantaran sebelum acara 2 jam.</div>
+    </div>
+    <div class="card">
+        <div class="card-title">Paket Kantor / Instansi&nbsp;— mulai Rp 2.500.000</div>
+        <div class="card-text">Untuk acara 100 pax: prasmanan 2 lengkap + snack box kombi
+        untuk coffee break + air mineral botol + petugas stand 2 orang. Faktur atas nama
+        instansi &amp; dokumen penawaran resmi tersedia.</div>
+    </div>
+</div>
+<div class="grid-2">
+    <div class="card">
+        <div class="card-title">Paket Mahasiswa / Anak Kos&nbsp;— mulai Rp 75.000</div>
+        <div class="card-text">Nasi box hemat untuk 5 orang dengan bonus 1 box gratis
+        (beli 5 gratis 1), atau patungan langganan harian mingguan. Ideal untuk uts/uas
+        bareng, syukuran kos, dan rapat organisasi kampus.</div>
+    </div>
+    <div class="card">
+        <div class="card-title">Paket Darurat H-1&nbsp;— sesuai permintaan</div>
+        <div class="card-text">Pesan mendadak sehari sebelum acara: tersedia nasi box
+        hemat/standar &amp; snack box selama bahan tersedia. Sertakan stok cadangan 5%
+        gratis untuk berjaga-jaga tamu tambahan.</div>
+    </div>
+</div>
+
+<div class="tip-box">
+    <span class="tip-label">Kebijakan yang Perlu Ditulis di Website</span>
+    <div class="tip-text">Tampilkan tiga kebijakan ini agar pembeli tidak ragu:
+    (1) <b>DP 50%</b> untuk mengunci tanggal, pelunasan saat pengantaran;
+    (2) <b>perubahan pesanan maksimal H-2</b> untuk jumlah box/pax;
+    (3) <b>stok cadangan 5%</b> gratis untuk pesanan di atas 100 pax.
+    Kebijakan yang jelas memangkas 90% pertanyaan bolak-balik di WhatsApp.</div>
+</div>
+
+<!-- ========== BAB 5 ========== -->
+<div class="chapter-header" id="bab5">
+    <div class="ch-tag">BAB 5</div>
+    <h2 class="ch-title">Google Search Console Langkah demi Langkah</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Google Search Console (GSC) adalah panel kendali gratis tempat Anda
+"memperkenalkan" cateringwatiyem.site kepada Google. Tanpa GSC, website baru kadang
+baru ditemukan Google setelah berminggu-minggu; dengan GSC dan sitemap yang dikirim
+benar, prosesnya umumnya hanya 1–7 hari. Seluruh langkah di bawah gratis dan bisa
+diselesaikan dalam satu sore&nbsp;— asalkan website Anda sudah tayang dan bisa dibuka
+dengan alamat domain lengkap.</p>
+
+<h3 class="sub">5.1&nbsp;— Persiapan Sebelum Mulai</h3>
+
+<div class="check-item"><div class="check-box"></div><div class="check-text">Domain <b>cateringwatiyem.site</b> sudah aktif dan membuka website Anda ketika diketik di browser (bukan halaman "parked" dari registrar).</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text">Website sudah memakai alaman aman <b>https://</b> (SSL gratis biasanya otomatis tersedia di hosting modern&nbsp;— aktifkan lewat menu SSL/TLS bila belum).</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text">Anda punya <b>akun Google</b> (Gmail). Sebaiknya buat khusus untuk usaha, contoh: <em>cateringwatiyem.magetan@gmail.com</em>, agar kredensial tidak tercampur akun pribadi.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text">Anda tahu <b>akun registrar</b> tempat membeli domain (Niagahoster, Rumahweb, Namecheap, GoDaddy, dll.) beserta loginnya&nbsp;— nanti dipakai saat verifikasi DNS.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text">Berkas <b>sitemap.xml</b> sudah siap di alamat <em>https://cateringwatiyem.site/sitemap.xml</em> (cara membuatnya di sub-bab 5.4&nbsp;— bisa juga otomatis dibuat oleh plugin SEO bila Anda memakai WordPress).</div></div>
+
+<h3 class="sub">5.2&nbsp;— Mendaftarkan Domain ke Search Console</h3>
+
+<div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+        <div class="step-title">Buka Search Console dan masuk</div>
+        <div class="step-text">Kunjungi <em>search.google.com/search-console</em> di browser
+        (gunakan laptop/HP dengan browser biasa). Klik tombol <b>"Mulai sekarang"</b>, lalu
+        masuk dengan akun Google usaha Anda. Tampilan pertama adalah halaman selamat datang
+        dengan dua pilihan properti.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+        <div class="step-title">Pilih tipe properti "Domain"</div>
+        <div class="step-text">Anda akan disodori dua opsi: <b>Prefiks URL</b> dan
+        <b>Domain</b>. Pilih <b>Domain</b> (berlambang bola dunia). Opsi Domain memverifikasi
+        seluruh variasi alamat sekaligus&nbsp;— https maupun http, www maupun tanpa www&nbsp;— sehingga
+        Anda tidak perlu mendaftar satu-satu. Opsi ini adalah yang paling disarankan Google
+        untuk domain baru seperti .site Anda.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+        <div class="step-title">Masukkan nama domain</div>
+        <div class="step-text">Ketik <b>cateringwatiyem.site</b> pada kolom isian&nbsp;— tanpa
+        <em>https://</em>, tanpa <em>www</em>, murni nama domainnya saja. Setelah itu akan
+        muncul jendela <b>"Verifikasi kepemilikan domain"</b> berisi satu baris kode TXT
+        panjang yang diawali tulisan <em>google-site-verification=</em> diikuti rangkaian
+        huruf-acak. Salin kode itu (tekan ikon salin di sampingnya agar tidak ada karakter
+        yang tertinggal).</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+        <div class="step-title">Tempel kode TXT di registrar domain</div>
+        <div class="step-text">Masuk ke dasbor registrar tempat Anda membeli domain, cari
+        menu bernama <b>DNS Management</b> / <b>Kelola DNS</b> / <b>Advanced DNS</b>. Tambahkan
+        record baru dengan ketentuan: <b>Type</b> = TXT · <b>Name/Host</b> = @ (atau biarkan
+        kosong) · <b>Value/Target</b> = tempel kode google-site-verification tadi ·
+        <b>TTL</b> = biarkan default. Simpan record-nya.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+        <div class="step-title">Klik "Verifikasi" di Search Console</div>
+        <div class="step-text">Kembali ke jendela GSC lalu klik tombol <b>Verifikasi</b>.
+        Bila berhasil, muncul tulisan "Domain sudah diverifikasi". Bila gagal, itu biasanya
+        karena propagasi DNS belum selesai&nbsp;— tunggu 30–60 menit lalu klik Verifikasi lagi.
+        Propagasi maksimal 48 jam, namun pada praktiknya registrar lokal biasanya selesai
+        dalam hitungan menit.</div>
+    </div>
+</div>
+
+<div class="tip-box">
+    <span class="tip-label">Kalau Opsi Domain Gagal Terus</span>
+    <div class="tip-text">Pakai opsi cadangan <b>"Prefiks URL"</b>: pilih metode verifikasi
+    <b>File HTML</b>, unduh berkas kecil bernama <em>googleXXXX.html</em>, unggah ke folder
+    utama website Anda lewat file manager hosting, lalu klik Verifikasi. Cara ini tidak
+    menyentuh DNS sama sekali dan hampir selalu berhasil untuk pemula.</div>
+</div>
+
+<h3 class="sub">5.3&nbsp;— Mengirimkan Sitemap</h3>
+
+<div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+        <div class="step-title">Buka menu Sitemap</div>
+        <div class="step-text">Setelah verifikasi berhasil, Anda masuk ke dasbor GSC.
+        Pada menu kiri, gulir ke bagian bawah dan klik <b>Sitemap</b> (ikon berlambang
+        gawai). Ini halaman tempat Anda mendaftarkan peta situs.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+        <div class="step-title">Isi alamat sitemap dan kirim</div>
+        <div class="step-text">Pada kolom "Tambahkan sitemap baru", cukup ketik
+        <b>sitemap.xml</b>&nbsp;— bagian <em>https://cateringwatiyem.site/</em> sudah terisi
+        otomatis di depannya. Tekan tombol <b>Kirim</b>. Status "Berhasil" akan muncul di
+        daftar, dengan kolom "Halaman yang ditemukan" yang terisi setelah Google selesai
+        membaca (bisa beberapa jam; klik ikon segarkan di kolom kanan untuk memeriksa).</div>
+    </div>
+</div>
+
+<h3 class="sub">5.4&nbsp;— Membuat sitemap.xml dan robots.txt Sederhana</h3>
+
+<p class="body-text">Jika website builder Anda tidak membuat sitemap otomatis, salin
+kerangka berikut, sesuaikan tanggal <em>lastmod</em>, simpan sebagai berkas
+<em>sitemap.xml</em>, lalu unggah ke folder utama hosting:</p>
+
+<div class="copy-block"><span class="mono">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://cateringwatiyem.site/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-13&lt;/lastmod&gt;&lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://cateringwatiyem.site/layanan&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-13&lt;/lastmod&gt;&lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://cateringwatiyem.site/menu-harga&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-13&lt;/lastmod&gt;&lt;priority&gt;0.9&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://cateringwatiyem.site/tentang-kami&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-13&lt;/lastmod&gt;&lt;priority&gt;0.6&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://cateringwatiyem.site/kontak&lt;/loc&gt;
+    &lt;lastmod&gt;2026-10-13&lt;/lastmod&gt;&lt;priority&gt;0.7&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</span></div>
+
+<p class="body-text">Bersamaan dengan itu, buat pula berkas <em>robots.txt</em> di folder
+yang sama&nbsp;— berkas kecil yang menegaskan bahwa seluruh halaman boleh dirayap dan memberi
+tahu Google lokasi sitemap Anda:</p>
+
+<div class="copy-block"><span class="mono">User-agent: *
+Allow: /
+
+Sitemap: https://cateringwatiyem.site/sitemap.xml</span></div>
+
+<h3 class="sub">5.5&nbsp;— Minta Pengindeksan Halaman Penting</h3>
+
+<div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+        <div class="step-title">Inspeksi tiap URL utama</div>
+        <div class="step-text">Di bagian atas GSC ada kotak pencarian bertuliskan
+        "Periksa URL di properti ini". Tempel alamat lengkap satu halaman, misalnya
+        <em>https://cateringwatiyem.site/</em>, lalu tekan Enter. Tampil halaman
+        <b>Inspeksi URL</b> yang menampilkan status halaman tersebut di indeks Google.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+        <div class="step-title">Klik "Minta Pengindeksan"</div>
+        <div class="step-text">Bila URL belum terindeks, akan tersedia tombol
+        <b>Minta Pengindeksan</b>&nbsp;— klik tombol itu. Google lalu menjadwalkan perayapan,
+        biasanya dalam 1–3 hari. Ulangi proses ini untuk lima halaman utama Anda satu
+        per satu (beranda, layanan, menu-harga, tentang-kami, kontak).</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+        <div class="step-title">Cek hasilnya lewat pencarian site:</div>
+        <div class="step-text">Setelah beberapa hari, buka Google dan ketik
+        <b>site:cateringwatiyem.site</b>. Semua halaman yang sudah terindeks akan tampil
+        di hasil pencarian. Bila belum muncul juga setelah 2 minggu, buka kembali
+        Inspeksi URL untuk melihat penyebabnya&nbsp;— umumnya cukup minta ulang pengindeksan.</div>
+    </div>
+</div>
+
+<div class="tip-box">
+    <span class="tip-label">Tiga Pemercepat Indeks</span>
+    <div class="tip-text">(1) Daftarkan Google Business Profile di BAB 6 dan isi kolom
+    website dengan cateringwatiyem.site&nbsp;— tautan dari Google Maps adalah sinyal kuat.
+    (2) Bagikan tautan website di bio WhatsApp Business, caption Facebook/Instagram, dan
+    grup komunitas Magetan. (3) Perbarui <em>lastmod</em> sitemap setiap ada perubahan
+    menu lalu kirim ulang&nbsp;— Google menyukai situs yang terbukti hidup.</div>
+</div>
+
+<!-- ========== BAB 6 ========== -->
+<div class="chapter-header" id="bab6">
+    <div class="ch-tag">BAB 6</div>
+    <h2 class="ch-title">Google Business Profile &amp; Google Maps</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Saat orang mencari "catering terdekat" atau "catering Magetan", Google
+menampilkan tiga hasil peta besar di urutan paling atas&nbsp;— inilah yang disebut <em>local
+pack</em>, lahan paling subur untuk usaha catering. Gerbang masuknya adalah Google
+Business Profile (GBP), gratis sepenuhnya. Bab ini memandu Anda mendaftar, diverifikasi,
+mengoptimalkan profil sampai penuh, dan membangun mesin ulasan pelanggan yang terus
+berputar.</p>
+
+<h3 class="sub">6.1&nbsp;— Membuat Profil Bisnis Baru</h3>
+
+<div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+        <div class="step-title">Buka Google Business Profile</div>
+        <div class="step-text">Kunjungi <em>business.google.com</em> atau ketik
+        <em>google.com/business</em>, lalu klik tombol <b>"Kelola sekarang"</b> dan masuk
+        dengan akun Google usaha Anda&nbsp;— disarankan akun yang sama dengan Search Console
+        agar semua aset digital berada di satu tempat.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+        <div class="step-title">Tambahkan bisnis dan isi nama persis</div>
+        <div class="step-text">Klik <b>"Tambahkan bisnis"</b> → pilih jenis bisnis Anda sendiri.
+        Pada kolom nama, ketik <b>Catering Watiyem</b>&nbsp;— persis sama dengan nama di website,
+        papan nama, dan kwitansi. Konsistensi nama adalah pilar pertama SEO lokal; jangan
+        menambahkan kata kunci ke nama profil seperti "Catering Watiyem Magetan Murah"
+        karena pelanggaran pedoman Google dan berisiko profil ditangguhkan.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+        <div class="step-title">Pilih kategori "Caterer"</div>
+        <div class="step-text">Ketik <em>caterer</em> pada kolom kategori dan pilih
+        <b>Caterer</b> sebagai kategori utama. Bila ingin lebih spesifik, tambahkan kategori
+        sekunder: <b>Food service</b> dan <b>Catering food and drink supplier</b> (untuk
+        paket snack box). Kategori menentukan di pencarian mana profil Anda layak tampil,
+        jangan sampai salah pilih.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+        <div class="step-title">Isi alamat dapur dan area layanan</div>
+        <div class="step-text">Masukkan alamat lengkap: <b>Setro, Tebon, Kec. Barat,
+        Kabupaten Magetan, Jawa Timur 63395</b>, dan letakkan pin peta tepat di titik
+        tersebut&nbsp;— bantu akurasi dengan menempelkan Kode Plus <b>CFR3+5JQ</b> di pencarian
+        Google Maps terlebih dahulu untuk melihat posisi persisnya. Selanjutnya tentukan
+        <b>area layanan</b>: pilih radius ± 20 km dari alamat, atau tambah daftar kota/
+        kecamatan: Magetan Kota, Maospati, Sukomoro, Kawedanan, Parang, Bendo, Panekan,
+        Nguntoronadi. Area layanan inilah yang Google pakai saat mencocokkan pencarian
+        "catering terdekat" dari berbagai penjuru kabupaten.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+        <div class="step-title">Kontak, website, dan jam operasional</div>
+        <div class="step-text">Isi nomor telepon <b>+62 857-0680-0961</b> (centang tersedia
+        via WhatsApp bila diminta), situs web <b>cateringwatiyem.site</b>, dan jam
+        operasional yang realistis&nbsp;— contoh: Senin–Sabtu 07.00–20.00, Minggu 08.00–15.00.
+        Jam yang akurat memengaruhi kapan profil Anda dianggap "sedang buka" di pencarian.</div>
+    </div>
+</div>
+
+<h3 class="sub">6.2&nbsp;— Verifikasi Profil</h3>
+
+<p class="body-text">Setelah data terisi, Google meminta verifikasi untuk memastikan
+Anda pemilik sah usaha ini. Metode yang tersedia berbeda-beda tergantung wilayah dan
+kategori: <strong>kartu pos</strong> (paling umum&nbsp;— Google mengirim kartu berisi kode 5
+digit ke alamat dapur, tiba biasanya 1–2 minggu), <strong>telepon/SMS</strong>,
+<strong>email</strong>, atau <strong>video</strong> (Anda merekam lingkungan dapur dan
+dokumen izin). Kartu pos sering menjengkelkan karena lamanya, tetapi sekali terverifikasi
+profil langsung tayang penuh di Maps dan pencarian. Bila ada pilihan verifikasi video,
+manfaatkan&nbsp;— prosesnya bisa selesai di hari yang sama.</p>
+
+<div class="tip-box">
+    <span class="tip-label">Selama Menunggu Kartu Post</span>
+    <div class="tip-text">Jangan berdiam diri: (1) siapkan 10–15 foto terbaik&nbsp;— nasi box
+    jadi, stand prasmanan, dapur yang bersih, proses memasak; (2) susun draf deskripsi
+    bisnis 750 karakter (contoh lengkap di bawah); (3) kumpulkan daftar pelanggan loyal
+    yang siap diminta ulasan begitu profil tayang. Begitu kode verifikasi dimasukkan,
+    Anda bisa melengkapi semuanya dalam satu duduk.</div>
+</div>
+
+<h3 class="sub">6.3&nbsp;— Optimasi Profil Sampai 100% Lengkap</h3>
+
+<p class="body-text">Google memberi skor "kelengkapan profil"&nbsp;— semakin lengkap, semakin
+tinggi kepercayaan Google untuk menampilkan Anda di local pack. Elemen wajib yang harus
+terisi semua: foto profil (logo), foto sampul (foto makanan paling cantik), minimal 10
+foto lain, deskripsi bisnis, jam buka, area layanan, telepon, website, dan kategori.
+Tambahkan pula <em>Produk</em>: unggah tiap paket (Nasi Box Hemat Rp 15.000, dst.) lengkap
+dengan foto dan harga&nbsp;— produk di GBP bisa muncul langsung di hasil pencarian tanpa
+orang harus membuka website Anda.</p>
+
+<div class="copy-label">Deskripsi Bisnis (750 karakter)&nbsp;— Salin &amp; Sesuaikan</div>
+<div class="copy-block">Catering Watiyem adalah jasa catering rumahan di Magetan yang
+melayani nasi box, prasmanan acara kantor, catering harian makan siang, dan snack box
+untuk area Magetan dan sekitarnya (± 20 km). Semua menu dimasak fresh setiap hari dengan
+bumbu racikan sendiri, porsi jujur, dan pengantaran tepat waktu. Nasi box mulai Rp15.000
+(min. 20 box), prasmanan mulai Rp28.000/pax (min. 50 pax), snack box mulai Rp8.000, dan
+langganan harian mulai Rp25.000/hari. Tersedia paket syukuran lengkap dengan tumpengan,
+paket acara instansi dengan faktur resmi, hingga paket hemat mahasiswa. Pemesanan mudah
+lewat WhatsApp 0857-0680-0961&nbsp;— konsultasi menu gratis, DP 50%, dan perubahan pesanan
+fleksibel. Alamat dapur: Setro, Tebon, Kec. Barat, Kab. Magetan.</div>
+
+<h3 class="sub">6.4&nbsp;— Membangun Mesin Ulasan Pelanggan</h3>
+
+<p class="body-text">Ulasan adalah faktor peringkat lokal terkuat yang bisa Anda kendalikan.
+Profil dengan 30+ ulasan berrating 4,7 ke atas hampir selalu menempati local pack di
+kota kecil seperti Magetan. Aturan mainnya: <strong>minta ulasan lewat WhatsApp 1–2 hari
+setelah acara selesai</strong>&nbsp;— saat rasa bahagia pelanggan masih hangat dan momen
+ingatannya masih segar. Sertakan tautan langsung ulasan profil Anda (ambil dari menu
+"Bagikan profil" atau tombol "Minta ulasan" di dasbor GBP; formatnya pendek dan aman
+dibuka dari HP). Jangan pernah membeli ulasan palsu atau membalas ulasan dengan insentif —
+Google mendeteksi pola ini dan menurunkan peringkat, bahkan menangguhkan profil.</p>
+
+<div class="copy-label">Pesan WhatsApp Minta Ulasan&nbsp;— Kirim H+1 Setelah Acara</div>
+<div class="copy-block">Selamat siang, Bapak/Ibu [nama] 🙏
+Terima kasih sudah memesan catering di Catering Watiyem untuk [nama acara] kemarin.
+Semoga acaranya berjalan lancar dan semua tamu senang dengan menunya.
+
+Kalau berkenan, tolong bantu beri ulasan singkat di profil Google kami ya —
+cukup 1 menit lewat tautan ini: [tautan ulasan]
+
+Ulasan Bapak/Ibu sangat berarti untuk usaha kecil seperti kami.
+Terima kasih banyak! 🙏</div>
+
+<p class="body-text">Balas <strong>setiap ulasan</strong>&nbsp;— yang bintang lima maupun yang
+kurang memuaskan&nbsp;— dalam 24 jam, dengan menyebut nama pelanggan dan detail pesanannya.
+Contoh: "Terima kasih Bu Ratna sudah mempercayakan prasmanan 80 pax untuk acara kantor
+Ibu. Senang sekali mendengar pesertanya suka ayam semurnya. Sampai jumpa di acara
+berikutnya!" Untuk ulasan kritik, balas dengan empati dan solusi tanpa membantah&nbsp;— calon
+pelanggan justru menilai cara Anda menangani keluhan, bukan keluhannya.</p>
+
+<h3 class="sub">6.5&nbsp;— Posting Rutin &amp; Poin Ekstra</h3>
+
+<p class="body-text">Fitur <strong>Post</strong> di GBP mirip status singkat yang tampil
+langsung di profil Google Anda&nbsp;— gratis dan sangat kurang dimanfaatkan pesaing. Posting
+minimal mingguan: menu spesial hari ini, foto pesanan yang baru keluar dari dapur, promo
+beli 5 gratis 1, atau slot tanggal yang masih kosong minggu ini. Setiap post adalah sinyal
+segar bahwa usaha Anda aktif. Manfaatkan pula fitur <strong>Tanya Jawab</strong>: Anda
+bisa membuat sendiri pertanyaan yang sering masuk ("Berapa minimal order nasi box?")
+beserta jawabannya, sehingga calon pembeli menemukan informasi tanpa menunggu balasan
+chat Anda.</p>
+
+<div class="tip-box">
+    <span class="tip-label">Formula Local Pack</span>
+    <div class="tip-text">Tiga penentu utama peringkat lokal: <b>relevansi</b> (kategori
+    + deskripsi + produk sesuai kata kunci pencarian), <b>jarak</b> (profil muncul bagi
+    pencari yang dekat dengan Magetan&nbsp;— otomatis menguntungkan Anda di pasar lokal), dan
+    <b>ketonjolan</b> (jumlah + rating ulasan, kelengkapan profil, dan aktivitas rutin).
+    Anda tidak bisa mengatur jarak, tapi dua lainnya sepenuhnya di tangan Anda.</div>
+</div>
+
+<!-- ========== BAB 7 ========== -->
+<div class="chapter-header" id="bab7">
+    <div class="ch-tag">BAB 7</div>
+    <h2 class="ch-title">Checklist SEO Lokal &amp; Perawatan Rutin</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">SEO bukan proyek sekali jalan, melainkan kebiasaan mingguan yang ringan.
+Bab ini merangkum seluruh teknis on-page dalam satu daftar periksa, memberi kode data
+terstruktur (schema) yang memudahkan Google membaca usaha Anda, lalu menutup dengan
+jadwal perawatan yang hanya memakan waktu ± 30 menit per minggu.</p>
+
+<h3 class="sub">7.1&nbsp;— Checklist On-Page SEO</h3>
+
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Satu H1 per halaman</b> mengandung kata kunci utama (halaman beranda: "Jasa Catering Makanan Lezat &amp; Murah di Magetan").</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Meta title &amp; description</b> terisi di lima halaman (salin dari BAB 3.3), tidak ada yang kosong atau ganda.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Struktur heading runtun</b>: H1 untuk judul halaman → H2 untuk nama bagian (mis. "Paket Nasi Box") → H3 untuk sub (mis. "Paket Hemat"). Jangan melompat-lompat.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Nama file foto mengandung kata kunci</b>: <em>nasi-box-magetan.jpg</em>, <em>prasmanan-kantor-magetan.jpg</em>&nbsp;— bukan <em>IMG_2041.jpg</em>.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Alt text pada semua foto</b> mendeskripsikan isi gambar dengan natural: "nasi box ayam semur Catering Watiyem Magetan".</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>URL halaman pendek dan mengandung kata kunci</b>: <em>/menu-harga</em>, <em>/layanan</em>&nbsp;— hindari <em>/index.php?page=2&id=5</em>.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Nomor WA dan alamat yang sama persis</b> (NAP&nbsp;— Name, Address, Phone) di footer setiap halaman, di GBP, dan di semua media sosial.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Setiap halaman punya tombol WhatsApp</b> dengan pesan otomatis sesuai konteksnya (BAB 3.7).</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Foto terkompresi</b> sebelum diunggah (aplikasi gratis "Photo Compressor" atau TinyPNG) agar halaman terbuka di bawah 3 detik pada jaringan seluler.</div></div>
+<div class="check-item"><div class="check-box"></div><div class="check-text"><b>Data terstruktur JSON-LD</b> terpasang (kode di sub-bab 7.2) dan lolos uji di <em>search.google.com/test/rich-results</em>.</div></div>
+
+<h3 class="sub">7.2&nbsp;— Data Terstruktur LocalBusiness (JSON-LD)</h3>
+
+<p class="body-text">Kode berikut ditempel di bagian <em>&lt;head&gt;</em> website Anda
+(atau kolom "kode khusus" pada website builder). Data terstruktur memberi tahu Google
+secara eksplisit: nama usaha, layanan, area, jam buka, dan koordinat&nbsp;— memperbesar
+peluang tampil kaya di hasil pencarian (bintang, jam buka, harga) dan menguatkan sinyal
+SEO lokal Anda:</p>
+
+<div class="copy-block"><span class="mono">&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Catering Watiyem",
+  "description": "Jasa catering makanan lezat &amp; murah di Magetan: nasi box,
+    prasmanan acara kantor, catering harian, dan snack box.",
+  "servesCuisine": ["Indonesian", "Javanese"],
+  "priceRange": "Rp8.000 - Rp45.000",
+  "telephone": "+6285706800961",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Setro, Tebon",
+    "addressLocality": "Kec. Barat, Kabupaten Magetan",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "63395",
+    "addressCountry": "ID"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -7.6604, "longitude": 111.3804 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00", "closes": "20:00"
+  }],
+  "areaServed": { "@type": "City", "name": "Magetan" },
+  "url": "https://cateringwatiyem.site"
+}
+&lt;/script&gt;</span></div>
+<p class="copy-hint">Titik koordinat di atas adalah perkiraan tengah Kecamatan Barat,
+Magetan. Ganti dengan koordinat persis lokasi dapur Anda: buka Google Maps, tekan lama
+pin lokasi rumah, lalu salin angka lintang-bujur yang muncul di kolom pencarian.</p>
+
+<h3 class="sub">7.3&nbsp;— Jadwal Perawatan Website &amp; SEO</h3>
+
+<table class="data">
+    <thead>
+        <tr>
+            <th style="width:120px">Ritme</th>
+            <th style="width:190px">Tugas</th>
+            <th>Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Mingguan</b></td>
+            <td>Post GBP + balas ulasan</td>
+            <td>Unggah 1 post (menu minggu ini / foto pesanan), balas semua ulasan baru &lt; 24 jam, jawab pertanyaan di fitur Tanya Jawab.</td>
+        </tr>
+        <tr>
+            <td><b>Mingguan</b></td>
+            <td>Perbarui menu mingguan</td>
+            <td>Ganti isi kotak "Menu Minggu Ini" di website&nbsp;— sinyal kesegaran konten bagi Google.</td>
+        </tr>
+        <tr>
+            <td><b>Bulanan</b></td>
+            <td>Cek Search Console</td>
+            <td>Lihat kata kunci apa yang mulai memunculkan website Anda (menu "Performa"), minta indeks ulang halaman yang berubah, pastikan tidak ada galat perayapan.</td>
+        </tr>
+        <tr>
+            <td><b>Bulanan</b></td>
+            <td>Foto baru (5–10 lembar)</td>
+            <td>Tambah ke GBP dan galeri website: pesanan jadi, proses dapur, kegiatan antar. Profil dengan foto rutin tampil lebih atas.</td>
+        </tr>
+        <tr>
+            <td><b>Triwulan</b></td>
+            <td>Audit harga &amp; HPP</td>
+            <td>Tinjau ulang kisaran harga BAB 4 terhadap harga bahan pasar; perbarui tabel website dan produk GBP agar selalu akurat.</td>
+        </tr>
+        <tr>
+            <td><b>Tahunan</b></td>
+            <td>Perpanjang domain &amp; hosting</td>
+            <td>Aktifkan auto-renew atau pasang pengingat H-30&nbsp;— domain kedaluwarsa menghapus seluruh peringkat yang sudah dibangun.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="tip-box">
+    <span class="tip-label">Ukur Kemajuan dengan Cara yang Benar</span>
+    <div class="tip-text">Indikator sukses yang realistis untuk 3 bulan pertama: website
+    muncul untuk pencarian brand ("catering watiyem"), profil Google tayang dengan 15+
+    ulasan, dan mulai ada chat WhatsApp masuk dari orang yang Anda tidak kenali. Kata
+    kunci kompetitif seperti "catering magetan" biasanya butuh 3–6 bulan konsistensi —
+    itu normal, jangan berhenti di bulan kedua.</div>
+</div>
+
+<!-- ========== BAB 8 ========== -->
+<div class="chapter-header" id="bab8">
+    <div class="ch-tag">BAB 8</div>
+    <h2 class="ch-title">Lampiran&nbsp;— Konten Siap Pakai &amp; FAQ</h2>
+    <div class="ch-divider"></div>
+</div>
+
+<p class="lead">Lampiran ini merangkum seluruh konten homepage dalam urutan tayang,
+sehingga Anda tinggal menyalin blok demi blok ke website builder tanpa harus melompat
+antar bab. Ditutup dengan delapan pertanyaan yang paling sering diajukan calon pembeli —
+tampilkan juga di website Anda untuk memangkas pertanyaan chat yang berulang.</p>
+
+<h3 class="sub">8.1&nbsp;— Rangkuman Konten Homepage (Urutan Salin-Tempel)</h3>
+
+<table class="data">
+    <thead>
+        <tr>
+            <th style="width:64px">Urut</th>
+            <th style="width:158px">Blok</th>
+            <th>Ambil dari</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>Header + navigasi</td><td>5 halaman sesuai peta situs BAB 2.1</td></tr>
+        <tr><td>2</td><td>Banner utama</td><td>Headline &amp; sub-headline Variasi A (BAB 3.1)</td></tr>
+        <tr><td>3</td><td>Paragraf pembuka</td><td>Teks "Cari catering di Magetan..." (BAB 3.5)</td></tr>
+        <tr><td>4</td><td>Keunggulan 6 kartu</td><td>Daftar keunggulan pada kartu layanan (BAB 2.2, blok 3)</td></tr>
+        <tr><td>5</td><td>4 kartu layanan</td><td>Deskripsi layanan (BAB 3.4) + harga mulai (BAB 4)</td></tr>
+        <tr><td>6</td><td>Alur pemesanan 4 langkah</td><td>Chat → konsultasi → DP → antar (BAB 2.2, blok 5)</td></tr>
+        <tr><td>7</td><td>Testimoni</td><td>6 kartu testimoni (BAB 3.8)&nbsp;— ganti dengan asli</td></tr>
+        <tr><td>8</td><td>CTA + tombol WA</td><td>Varian CTA (BAB 3.6) + pesan otomatis (BAB 3.7)</td></tr>
+        <tr><td>9</td><td>Footer</td><td>Alamat, WA, jam buka, area layanan (data BAB 1.1)</td></tr>
+    </tbody>
+</table>
+
+<h3 class="sub">8.2&nbsp;— FAQ untuk Website (8 Pertanyaan)</h3>
+
+<div class="card">
+    <div class="card-title">1&nbsp;— Berapa minimal order-nya?</div>
+    <div class="card-text">Nasi Box minimal 20 box, Prasmanan minimal 50 pax, Snack Box
+    minimal 30 box, dan Catering Harian cukup mulai langganan 5 hari. Di bawah jumlah itu
+    tetap bisa kita bahas&nbsp;— kadang slot dapur sedang longgar.</div>
+</div>
+<div class="card">
+    <div class="card-title">2&nbsp;— Apakah melayani di luar kota Magetan?</div>
+    <div class="card-text">Kami melayani Magetan dan sekitarnya hingga radius ± 20 km:
+    Maospati, Sukomoro, Kawedanan, Parang, Bendo, Panekan, Nguntoronadi, dan sekitarnya.
+    Di luar radius itu silakan chat dulu&nbsp;— biasanya masih bisa diatur dengan penyesuaian
+    ongkos antar.</div>
+</div>
+<div class="card">
+    <div class="card-title">3&nbsp;— Berapa hari sebelum acara harus memesan?</div>
+    <div class="card-text">Idealnya H-3 agar pilihan menu lengkap dan bahan terbaik bisa
+    kami siapkan. Untuk nasi box dan snack box, pesanan mendadak H-1 sering masih bisa
+    kami tampung selama slot dapur tersedia&nbsp;— langsung chat saja.</div>
+</div>
+<div class="card">
+    <div class="card-title">4&nbsp;— Bagaimana sistem pembayarannya?</div>
+    <div class="card-text">DP 50% untuk mengunci tanggal pesanan Anda, sisanya dilunasi
+    saat pengantaran. Pembayaran via transfer bank atau tunai saat serah terima. Untuk
+    instansi yang butuh faktur dan pembayaran tempo, tersedia juga&nbsp;— sebutkan saat chat.</div>
+</div>
+<div class="card">
+    <div class="card-title">5&nbsp;— Bisakah menu disesuaikan budget atau selera?</div>
+    <div class="card-text">Sangat bisa. Kirimkan jumlah tamu dan budget per pax Anda,
+    kami bantu susun kombinasi menu terbaik yang pas&nbsp;— mulai dari tingkat pedas sampai
+    menu yang ingin dihindari (alergi, vegetarian, dsb.).</div>
+</div>
+<div class="card">
+    <div class="card-title">6&nbsp;— Apakah menyediakan tumpengan untuk syukuran?</div>
+    <div class="card-text">Tersedia. Tumpengan grand lengkap dengan lauk-pauk komplit
+    Rp 350.000/unit, biasanya dipadukan prasmanan atau nasi box untuk tamu. Ada juga
+    paket bundling syukuran mulai Rp 1.450.000 untuk 50 tamu.</div>
+</div>
+<div class="card">
+    <div class="card-title">7&nbsp;— Apakah alat makan termasuk?</div>
+    <div class="card-text">Ya. Nasi box sudah termasuk box kuat, sendok, tissue, dan
+    stiker label menu. Prasmanan termasuk piring, gelas, alat makan sekali pakai, dan
+    etalase buffet. Tidak ada biaya tersembunyi di belakangnya.</div>
+</div>
+<div class="card">
+    <div class="card-title">8&nbsp;— Bagaimana kalau pesanan ingin diubah atau dibatalkan?</div>
+    <div class="card-text">Perubahan jumlah atau menu masih bisa dilakukan sampai H-2
+    sebelum acara. Untuk pembatalan, DP dikembalikan penuh bila info masuk lebih dari
+    3 hari sebelum acara&nbsp;— kami hanya menahan biaya bahan yang sudah dibeli.</div>
+</div>
+
+<h3 class="sub">8.3&nbsp;— Rencana Aksi 30 Hari Pertama</h3>
+
+<p class="body-text">Agar panduan ini tidak berhenti sebagai bacaan, berikut jadwal
+eksekusi realistis selama sebulan pertama. Tiap pekan cukup menyita 2–3 jam di sela
+kesibukan dapur, dan di akhir bulan ke-30 seluruh fondasi digital Catering Watiyem
+sudah berdiri tegak:</p>
+
+<div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+        <div class="step-title">Pekan 1&nbsp;— Bangun &amp; Tayangkan</div>
+        <div class="step-text">Belikan domain .site, susun lima halaman memakai teks
+        BAB 3 dan 4, ambil foto makanan dengan HP pada siang hari, lalu tayangkan.
+        Target akhir pekan: website bisa dibuka orang lain.</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+        <div class="step-title">Pekan 2&nbsp;— Daftarkan ke Google</div>
+        <div class="step-text">Verifikasi Search Console dengan DNS TXT (BAB 5),
+        unggah sitemap.xml, minta pengindeksan lima halaman utama, dan mulai mengisi
+        Google Business Profile sampai menunggu verifikasi (BAB 6).</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+        <div class="step-title">Pekan 3&nbsp;— Lengkapi Profil Maps</div>
+        <div class="step-text">Masukkan kode verifikasi GBP, unggah 10–15 foto, tempel
+        deskripsi 750 karakter, tambahkan produk paket, buat post pertama, dan pasang
+        schema JSON-LD di website (BAB 7.2).</div>
+    </div>
+</div>
+<div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+        <div class="step-title">Pekan 4&nbsp;— Nyalakan Mesin Ulasan</div>
+        <div class="step-text">Kirim tautan ulasan ke seluruh pelanggan bulan ini via
+        WhatsApp, balas setiap ulasan yang masuk, ganti menu mingguan di website, dan
+        cek Search Console untuk pertama kalinya. Ulangi ritme pekan 4 selamanya.</div>
+    </div>
+</div>
+
+</div>
+<!-- ================= ENDING ================= -->
+<div class="ending">
+    <div class="ending-bg"><div class="arc"></div></div>
+    <div class="ending-content">
+        <div class="cover-kicker">Sampai Jumpa di Pencarian Google</div>
+        <div class="ending-quote">"Website yang bagus tidak harus mahal —
+        yang mahal itu biarkan pesaing Anda lebih dulu ditemukan pelanggan."</div>
+        <div class="ending-sub">Sekarang giliran Anda: bangun websitenya pada pekan ini,
+        daftarkan Search Console dan Business Profile pada pekan depan, lalu rawat
+        dengan konsistensi. Dalam 3–6 bulan, nama Catering Watiyem akan menjadi salah
+        satu yang pertama muncul ketika warga Magetan mencari catering&nbsp;— dan chat
+        WhatsApp Anda akan mulai berdering dari orang yang belum pernah Anda kenal.</div>
+        <div class="ending-contact">
+            <div class="ending-contact-row">
+                <div class="ending-contact-label">Usaha</div>
+                <div class="ending-contact-value">Catering Watiyem&nbsp;— Magetan, Jawa Timur</div>
+            </div>
+            <div class="ending-contact-row">
+                <div class="ending-contact-label">WhatsApp</div>
+                <div class="ending-contact-value">+62 857-0680-0961</div>
+            </div>
+            <div class="ending-contact-row">
+                <div class="ending-contact-label">Alamat</div>
+                <div class="ending-contact-value">Setro, Tebon, Kec. Barat, Kab. Magetan 63395</div>
+            </div>
+            <div class="ending-contact-row">
+                <div class="ending-contact-label">Domain</div>
+                <div class="ending-contact-value">cateringwatiyem.site</div>
+            </div>
+        </div>
+    </div>
+    <div class="ending-footer">
+        <span>Panduan Website &amp; SEO Lokal</span>
+        <span>Edisi Pertama · 2026</span>
+    </div>
+</div>
+</body>
+</html>

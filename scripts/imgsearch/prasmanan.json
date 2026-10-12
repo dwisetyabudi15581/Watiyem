@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "prasmanan buffet catering Indonesian food buffet table event",
+  "count": 4,
+  "ranked": true,
+  "captioned_count": 4,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/1326afdf2e72.jpg",
+      "caption": "Table filled with many small dishes of Asian food, drinks, menu with text, partially visible person; no watermark, clear photo.",
+      "source": "Yelp",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/cd40729001e3.jpg",
+      "caption": "A person serves spiced food and yellow rice from clay pots outdoors. Contains Alamy watermarks and text (alamy, Image ID: 2HEWWP6, www.alamy.com).",
+      "source": "Alamy",
+      "original_width": "1300px",
+      "original_height": "957px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a176af70a6c4.jpg",
+      "caption": "A buffet table with stacked white cups, plates, and chafing dishes on a red patterned tablecloth; slightly blurry.",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/a5160d1eb322.jpg",
+      "caption": "A buffet counter with stainless steel trays of Asian dishes: soup with tofu, curry, noodles, and green beans.",
+      "source": "Tripadvisor",
+      "original_width": "1100px",
+      "original_height": "1100px"
+    }
+  ]
+}

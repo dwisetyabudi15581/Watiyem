@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "tumpeng nasi kuning Indonesian cone rice celebration",
+  "count": 4,
+  "ranked": true,
+  "captioned_count": 4,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/555b67d4269d.jpg",
+      "caption": "A traditional Indonesian tumpeng: cone-shaped rice topped with a green leaf, surrounded by colorful side dishes and carved vegetable decorations.",
+      "source": "The Jakarta Post",
+      "original_width": "1360px",
+      "original_height": "1142px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/0443b4db6196.jpg",
+      "caption": "A person slices a cone of yellow turmeric rice (tumpeng) surrounded by side dishes on a woven basket tray. Suitable for background image.",
+      "source": "NOW! Jakarta",
+      "original_width": "2323px",
+      "original_height": "1258px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/e3e73b555f1e.jpg",
+      "caption": "Traditional Indonesian tumpeng feast with yellow rice, fried chicken, noodles, vegetables, and carved garnishes, decorated with banana leaves. Contains Shutterstock watermark.",
+      "source": "Shutterstock",
+      "original_width": "1125px",
+      "original_height": "1600px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/b4948a879b46.jpg",
+      "caption": "A mini Indonesian tumpeng—yellow cone rice with banana leaf tip, surrounded by fried chicken, egg, and side dishes—with overlay text.",
+      "source": "Lemon8",
+      "original_width": "1170px",
+      "original_height": "1560px"
+    }
+  ]
+}

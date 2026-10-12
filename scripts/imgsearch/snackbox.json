@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "snack box pastel risoles Indonesian snack box coffee break",
+  "count": 4,
+  "ranked": true,
+  "captioned_count": 4,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/24687132cf20.jpg",
+      "caption": "A pistachio-topped pastry on a dark plate, with golden coffee pot and cup blurred in background, high clarity, no watermarks.",
+      "source": "Yelp",
+      "original_width": "1000px",
+      "original_height": "1000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/af3652213c5f.jpg",
+      "caption": "Takeout brunch spread on gray counter: biscuit sandwiches, hash brown casserole, drinks, and a \"COFFEE... MEDIUM ROAST\" bag.",
+      "source": "DoorDash: Food, Grocery and Retail - Fast Same Day Delivery",
+      "original_width": "2560px",
+      "original_height": "1440px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/18125d309e63.jpg",
+      "caption": "A hand holds an intricately crafted miniature Thai food sculpture on a tiny plate, with more miniature dishes blurred behind. Suitable for background image.",
+      "source": "Etsy",
+      "original_width": "1448px",
+      "original_height": "1086px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/ae433d9cd834.jpg",
+      "caption": "A top-down view of a wooden table featuring pepperoni pizza, popcorn, pretzel bites, chicken nuggets, drinks, and a remote.",
+      "source": "DoorDash: Food, Grocery and Retail - Fast Same Day Delivery",
+      "original_width": "1400px",
+      "original_height": "800px"
+    }
+  ]
+}

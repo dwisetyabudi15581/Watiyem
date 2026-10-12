@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "nasi box catering Indonesia makanan kotak",
+  "count": 4,
+  "ranked": true,
+  "captioned_count": 4,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/daed98253934.jpeg",
+      "caption": "A boxed meal with turmeric rice, saucy chicken, vegetables, crackers, and a \"flow\" mineral water bottle.",
+      "source": "Aisya Catering",
+      "original_width": "1024px",
+      "original_height": "848px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/7be32a6e809a.jpg",
+      "caption": "Indonesian lunch box with yellow rice, chicken, noodles, tempeh, shrimp crackers, and Cleo bottled water, on woven bamboo mat.",
+      "source": "Rumah Tumpeng Jakarta",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c572e3908ef3.jpg",
+      "caption": "Branded orange \"AYO catering\" lunch box in foreground; meal boxes with grilled chicken, lettuce, sauce behind. Text: logo, \"NASI BOX | SNACK BOX | PRASMANAN FROZEN FOOD\", \"0856-9750-5510\", \"FROZEN FOOD Scan QR Codes Untuk Nikmati Lauk Favoritmu Selalu Hari\", address \"Jl Cagar Alam, Gg Damai 1 No 19, Pancoran Mas, Depok\". Contains logo and QR code.",
+      "source": "ayocatering.com",
+      "original_width": "1032px",
+      "original_height": "1309px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c4061ad24064.jpg",
+      "caption": "Food menu poster \"Paket Nasi Kotak\" by Gerobak Betawi, listing six rice box packages with prices and contact numbers. Contains a large amount of text; not suitable as background.",
+      "source": "Gerobak Betawi",
+      "original_width": "1100px",
+      "original_height": "780px"
+    }
+  ]
+}

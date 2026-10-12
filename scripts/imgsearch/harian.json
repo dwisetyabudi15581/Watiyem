@@ -1,0 +1,37 @@
+{
+  "success": true,
+  "query": "Indonesian home cooking rice dish lunch meal",
+  "count": 4,
+  "ranked": true,
+  "captioned_count": 4,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/d5476f05948f.jpg",
+      "caption": "A white bowl of spicy fried rice with sliced cucumber, tomato wedges, and scrambled egg strips, on wooden surface. No text or watermark. High clarity, strong visual impact: suitable for background image",
+      "source": "Cook Me Indonesian",
+      "original_width": "1200px",
+      "original_height": "1041px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/14357e884c27.jpg",
+      "caption": "A black plate with turmeric yellow rice, sauce-drizzled cooked salmon, and cucumber slices; contains watermark \"© Connie Veneracion.\"",
+      "source": "Umami Days: Cooking",
+      "original_width": "1600px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6bb0fe3edc8e.jpg",
+      "caption": "Fried rice in a pan topped with a fried egg, peanuts, cilantro, chicken, and vegetables; watermark \"Vikalinka\" bottom-left, not suitable for background.",
+      "source": "Vikalinka",
+      "original_width": "800px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6e817babe1c9.jpg",
+      "caption": "A close-up of a creamy chicken, rice, and green bean one-pot dish in a white pan, garnished with cilantro. Suitable for background image.",
+      "source": "Vikalinka",
+      "original_width": "800px",
+      "original_height": "1200px"
+    }
+  ]
+}
