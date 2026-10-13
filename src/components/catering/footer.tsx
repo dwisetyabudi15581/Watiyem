@@ -6,9 +6,14 @@ const NAV_FOOTER = [
   { href: "#beranda", label: "Beranda" },
   { href: "#layanan", label: "Layanan" },
   { href: "#menu", label: "Menu & Harga" },
+  { href: "#galeri", label: "Galeri" },
+  { href: "#tentang", label: "Tentang Kami" },
   { href: "#cara-pesan", label: "Cara Pesan" },
   { href: "#testimoni", label: "Testimoni" },
 ];
+
+const MAPS_EMBED =
+  "https://maps.google.com/maps?q=-7.6604,111.3804&z=15&hl=id&output=embed";
 
 export function Footer() {
   return (
@@ -89,6 +94,22 @@ export function Footer() {
             ))}
           </ul>
         </div>
+      </div>
+
+      <div className="mx-auto max-w-6xl px-4 pb-10 sm:px-6">
+        <div className="overflow-hidden rounded-2xl border border-brand-border shadow-sm">
+          <iframe
+            src={MAPS_EMBED}
+            title="Peta lokasi Catering Watiyem di Setro, Tebon, Magetan Barat"
+            className="h-56 w-full sm:h-64"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+        <p className="mt-2 text-center text-xs text-muted-foreground">
+          Plus Code: {BISNIS.plusCode} — {BISNIS.alamat}
+        </p>
       </div>
 
       <div className="border-t border-brand-border">

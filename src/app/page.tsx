@@ -3,6 +3,8 @@ import { Hero } from "@/components/catering/hero";
 import { Keunggulan } from "@/components/catering/keunggulan";
 import { Layanan } from "@/components/catering/layanan";
 import { MenuSection } from "@/components/catering/menu-section";
+import { Galeri } from "@/components/catering/galeri";
+import { TentangKami } from "@/components/catering/tentang-kami";
 import { Alur } from "@/components/catering/alur";
 import { Testimoni } from "@/components/catering/testimoni";
 import { Cta } from "@/components/catering/cta";
@@ -18,6 +20,8 @@ export default function Home() {
         <Keunggulan />
         <Layanan />
         <MenuSection />
+        <Galeri />
+        <TentangKami />
         <Alur />
         <Testimoni />
         <Cta />

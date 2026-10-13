@@ -12,6 +12,7 @@ export const BISNIS = {
   waNumber: "6285706800961",
   alamat:
     "Setro, Tebon, Kec. Barat, Kabupaten Magetan, Jawa Timur 63395",
+  plusCode: "CFR3+5JQ",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Catering+Watiyem+Setro+Tebon+Magetan",
   jam: "Setiap hari, 07.00–20.00 WIB",
@@ -205,6 +206,65 @@ export const MENU_TABS: Record<string, { label: string; catatan: string; paket: 
     ],
   },
 };
+
+export const TENTANG = {
+  kicker: "Tentang Kami",
+  judul: "Berkenalan dengan Bu Watiyem",
+  foto: "/images/bu-watiyem.jpg",
+  fotoAlt: "Bu Watiyem, pemilik Catering Watiyem, di dapurnya di Tebon Magetan",
+  paragraf: [
+    "Semua bermula dari dapur kecil di Tebon, Magetan Barat. Bu Watiyem mulai memasak untuk tetangga — ada syukuran, ada pengajian, ada acara kantor yang butuh nasi box. Yang datang pulang membawa cerita: masakannya enak, porsinya jujur, dan harganya masuk akal.",
+    "Dari cerita ke cerita, pesanan pun tumbuh. Kini dapur Catering Watiyem setiap subuh sudah sibuk meracik bumbu — sambal diulek sendiri di cobek, bumbu kuning dan semur diracik dari resep keluarga yang sudah puluhan tahun dipakai. Tidak ada masakan stok semalam, karena bagi kami, acara Anda adalah reputasi dapur kami.",
+  ],
+  kutipan: {
+    teks: "Enak itu standar. Yang bikin orang balik lagi adalah porsi yang jujur dan makanan yang datang tepat waktu.",
+    pembicara: "Bu Watiyem — pemilik & kepala dapur",
+  },
+  statistik: [
+    { angka: "4", label: "layanan utama" },
+    { angka: "±20 km", label: "area layanan Magetan & sekitarnya" },
+    { angka: "Setiap hari", label: "masak fresh, buka 07.00–20.00" },
+  ],
+} as const;
+
+export const GALERI = [
+  {
+    gambar: "/images/galeri-nasibox.jpg",
+    alt: "Nasi box kuning dengan ayam goreng crispy dari Catering Watiyem Magetan",
+    judul: "Nasi Box",
+    teks: "Dimasak pagi hari, dikirim sebelum acara dimulai.",
+  },
+  {
+    gambar: "/images/galeri-prasmanan.jpg",
+    alt: "Stand prasmanan buffet catering acara kantor di Magetan",
+    judul: "Prasmanan",
+    teks: "Stand rapi dan higienis untuk acara kantor & gathering.",
+  },
+  {
+    gambar: "/images/galeri-tumpeng.jpg",
+    alt: "Tumpeng syukuran dengan lauk komplit di tampah bambu",
+    judul: "Tumpeng Syukuran",
+    teks: "Tumpeng grand lengkap untuk acara syukuran & kodhongan.",
+  },
+  {
+    gambar: "/images/galeri-snackbox.jpg",
+    alt: "Snack box risoles dan pastel untuk coffee break seminar",
+    judul: "Snack Box",
+    teks: "Renyah sampai sesi terakhir acara Anda.",
+  },
+  {
+    gambar: "/images/galeri-harian.jpg",
+    alt: "Kotak makanan catering harian langganan makan siang",
+    judul: "Catering Harian",
+    teks: "Menu berganti tiap hari, diantar tepat jam makan siang.",
+  },
+  {
+    gambar: "/images/galeri-sambal.jpg",
+    alt: "Sambal segar diulek di cobek batu setiap subuh",
+    judul: "Sambal Ulek Sendiri",
+    teks: "Bumbu diracik sendiri setiap subuh — bukan bumbu instan.",
+  },
+] as const;
 
 export const KEUNGGULAN = [
   {

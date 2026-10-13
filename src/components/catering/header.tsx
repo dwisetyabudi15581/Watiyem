@@ -11,8 +11,9 @@ const NAV = [
   { href: "#beranda", label: "Beranda" },
   { href: "#layanan", label: "Layanan" },
   { href: "#menu", label: "Menu & Harga" },
+  { href: "#galeri", label: "Galeri" },
+  { href: "#tentang", label: "Tentang" },
   { href: "#cara-pesan", label: "Cara Pesan" },
-  { href: "#testimoni", label: "Testimoni" },
   { href: "#kontak", label: "Kontak" },
 ];
 
