@@ -17,12 +17,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cateringwatiyem.site"),
   title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
   description:
-    "Sambal pecel Madiun asli tanpa pengawet (botol mulai Rp15rb) & katering Magetan: nasi box, prasmanan, snack box & catering harian. Pesan gampang via WhatsApp!",
+    "Sambal pecel Madiun kering tanpa pengawet (Rp25.000/500 gr, dijual per gram) & katering Magetan: nasi box, prasmanan, snack box & catering harian. Pesan gampang via WhatsApp!",
   keywords: [
     "sambal pecel madiun",
     "bumbu pecel madiun",
     "jual sambal pecel madiun",
-    "sambal pecel botol",
+    "sambal pecel kering",
+    "sambal pecel kering madiun",
+    "bumbu pecel kering",
     "catering magetan",
     "jasa catering magetan",
     "catering magetan murah",
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
     description:
-      "Sambal pecel Madiun botol mulai Rp15rb + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya. Pesan gampang via WhatsApp!",
+      "Sambal pecel Madiun kering Rp25.000/500 gram + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya. Pesan gampang via WhatsApp!",
     url: "https://cateringwatiyem.site",
     siteName: "Watiyem",
     type: "website",
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
     description:
-      "Sambal pecel Madiun botol mulai Rp15rb + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya.",
+      "Sambal pecel Madiun kering Rp25.000/500 gram + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya.",
   },
   robots: {
     index: true,
@@ -73,9 +75,9 @@ const jsonLd = {
   "@type": "FoodEstablishment",
   name: "Watiyem — Sambal Pecel Madiun & Katering",
   description:
-    "Sambal pecel Madiun asli tanpa pengawet dalam botol serta jasa katering di Magetan: nasi box, prasmanan acara kantor, catering harian, dan snack box.",
+    "Sambal pecel Madiun asli dalam bentuk kering tanpa pengawet (dijual per gram, 500 gram Rp25.000) serta jasa katering di Magetan: nasi box, prasmanan acara kantor, catering harian, dan snack box.",
   servesCuisine: ["Indonesian", "Javanese"],
-  priceRange: "Rp8.000 - Rp45.000",
+  priceRange: "Rp5.000 - Rp45.000",
   telephone: "+6285706800961",
   address: {
     "@type": "PostalAddress",

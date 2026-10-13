@@ -37,7 +37,7 @@ export function Footer() {
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-foreground/65">
             Dapur rumahan di Tebon, Magetan Barat, yang setiap hari menyiapkan
-            sambal pecel Madiun botol, nasi box, prasmanan, langganan makan
+            sambal pecel Madiun kering, nasi box, prasmanan, langganan makan
             siang, dan snack box untuk warga Magetan dan sekitarnya. Semua menu
             dimasak fresh, bumbunya diracik sendiri, dan porsinya jujur — karena
             bagi kami, acara Anda adalah reputasi kami.

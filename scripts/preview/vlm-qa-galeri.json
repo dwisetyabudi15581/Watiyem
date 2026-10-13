@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Verdict: PASS**\n\n**Analisis:**\n1. **Foto Sambal Pecel Kering**: ✅ **Ada** (posisi kanan bawah, baris ke-2 kolom ke-3). Terlihat jelas sambal merah di cobek batu dengan ulekan kayu, dilengkapi judul \"**Sambal Pecel Kering**\" dan deskripsi \"Diulek di cobek, dijual per gram — seduh air panas, siap disiram.\"\n\n2. **Layout Galeri**: ✅ **Rapi dan terstruktur**\n   - Grid 3 kolom (responsive)\n   - Setiap kartu konsisten: gambar + judul tebal + deskripsi\n   - Spacing antar elemen merata\n   - Visual hierarchy jelas dengan rounded corners pada setiap card\n   - Kontras teks pada gambar (overlay) terbaca baik\n\n**Catatan**: Semua elemen galeri (Nasi Box, Prasmanan, Tumpeng Syukuran, Snack Box, Catering Harian, Sambal Pecel Kering) tampil dengan format visual yang seragam dan profesional.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791879159,
+  "id": "20261013161227ccc0379ec8b84774",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013161227ccc0379ec8b84774",
+  "usage": {
+    "completion_tokens": 261,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1471,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1732
+  }
+}

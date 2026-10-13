@@ -1,6 +1,6 @@
-# Catering Watiyem — Website
+# Watiyem — Sambal Pecel Madiun & Katering
 
-Website company profile untuk **Catering Watiyem**, jasa catering di Magetan, Jawa Timur. Dibangun dengan fokus pada **SEO lokal**, **pesan langsung via WhatsApp**, dan **pengalaman mobile-first** untuk pelanggan di sekitar Magetan dan sekitarnya.
+Website untuk **Watiyem**, dapur rumahan di Magetan, Jawa Timur yang menjual **sambal pecel Madiun kering** (dijual per gram, 500 gram Rp25.000) dan **jasa katering**. Dibangun dengan fokus pada **SEO lokal**, **pesan langsung via WhatsApp**, dan **pengalaman mobile-first** untuk pelanggan di Magetan dan sekitarnya.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8) ![License](https://img.shields.io/badge/Usage-Bisnis%20Pribadi-orange)
 
@@ -10,14 +10,15 @@ Website company profile untuk **Catering Watiyem**, jasa catering di Magetan, Ja
 
 | | |
 |---|---|
-| **Nama** | Catering Watiyem |
-| **Area layanan** | Magetan dan sekitarnya, Jawa Timur |
+| **Nama** | Watiyem — Sambal Pecel Madiun & Katering |
+| **Area layanan** | Magetan dan sekitarnya, Jawa Timur (sambal pecel: kirim se-Indonesia) |
 | **Alamat** | Setro, Tebon, Kec. Barat, Kabupaten Magetan, Jawa Timur 63395 |
-| **Plus Code** | CFR3+5JQ |
+| **Plus Code** | 6P4HCFR3+4M |
 | **Kontak** | WhatsApp / Telepon: +62 857-0680-0961 |
 
-### Layanan
+### Produk & Layanan
 
+- 🌶️ **Sambal Pecel Madiun (Kering)** — Rp 25.000/500 gram, dijual bebas per gram (mulai 100 gr Rp 5.000), tinggal seduh air panas — bisa kirim se-Indonesia via JNE/J&T
 - 🍱 **Nasi Box** — mulai Rp 15.000/box, cocok untuk rapat kantor & acara kantor
 - 🍽️ **Prasmanan** — mulai Rp 28.000/pax untuk acara syukuran & gathering
 - 📅 **Catering Harian** — mulai Rp 25.000/hari untuk kebutuhan rutin
@@ -30,13 +31,15 @@ Target pengunjung website: panitia syukuran & kodhongan, perusahaan/instansi yan
 ## Fitur Website
 
 - **Hero section** dengan headline SEO lokal + tombol WhatsApp langsung order
-- **4 kartu layanan** dengan foto dan tombol WA per layanan (pesan sudah terisi otomatis)
-- **Menu interaktif** dengan tab per kategori (Nasi Box / Prasmanan / Harian / Snack Box) lengkap dengan harga
+- **5 kartu produk & layanan** dengan foto dan tombol WA per layanan (pesan sudah terisi otomatis)
+- **Menu interaktif** dengan tab per kategori (Sambal Pecel / Nasi Box / Prasmanan / Harian / Snack Box) lengkap dengan harga
+- **Galeri foto** & section **Tentang Kami** (profil Bu Watiyem)
+- **Peta Google Maps** embed dengan pin lokasi persis
 - **Alur pemesanan 4 langkah** + banner paket nasi tumpeng
 - **Testimoni pelanggan** (6 ulasan — ganti dengan testimoni asli saat live)
-- **FAQ accordion** 8 pertanyaan yang sering ditanyakan calon pelanggan
+- **FAQ accordion** 11 pertanyaan yang sering ditanyakan calon pelanggan
 - **Tombol WhatsApp mengambang** di semua halaman
-- **SEO on-page**: meta title & description, Open Graph, 12 keyword lokal, JSON-LD schema `FoodEstablishment`
+- **SEO on-page**: meta title & description, Open Graph, 18 keyword lokal, JSON-LD schema `FoodEstablishment`
 - **Responsive** — tampil optimal di HP (mayoritas pengunjung) dan desktop
 
 ## Tech Stack
@@ -136,4 +139,4 @@ Pertanyaan tentang bisnis: **+62 857-0680-0961** (WhatsApp)
 
 ---
 
-© Catering Watiyem — Magetan, Jawa Timur
+© Watiyem — Sambal Pecel Madiun & Katering, Magetan, Jawa Timur

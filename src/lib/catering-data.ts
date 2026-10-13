@@ -7,7 +7,7 @@ export const BISNIS = {
   nama: "Watiyem — Sambal Pecel Madiun & Katering",
   tagline: "Sambal Pecel Madiun Asli & Katering Lezat–Murah di Magetan",
   subTagline:
-    "Sambal pecel Madiun tanpa pengawet dalam botol, nasi box, prasmanan, catering harian, dan snack box — dimasak fresh setiap hari untuk keluarga, acara syukuran, kantor, dan mahasiswa di Magetan dan sekitarnya.",
+    "Sambal pecel Madiun kering tanpa pengawet (Rp25.000/500 gr, dijual bebas per gram), nasi box, prasmanan, catering harian, dan snack box — dimasak fresh setiap hari untuk keluarga, acara syukuran, kantor, dan mahasiswa di Magetan dan sekitarnya.",
   telepon: "+62 857-0680-0961",
   waNumber: "6285706800961",
   alamat:
@@ -45,7 +45,7 @@ export const PESAN_WA = {
     "Halo Watiyem 🙏\nSaya mau tanya paket *syukuran/tumpengan*:\n• Tanggal acara: \n• Perkiraan jumlah tamu: \n• Lokasi: \nMohon info paket dan harganya ya. Terima kasih!"
   ),
   sambalPecel: waLink(
-    "Halo Watiyem 🙏\nSaya mau pesan *Sambal Pecel Madiun*:\n• Ukuran botol (200/350/500 ml): \n• Jumlah botol: \n• Level pedas (sedang/pedas/extra): \n• Dikirim atau ambil sendiri: \nMohon info total harganya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau pesan *Sambal Pecel Madiun* (kering):\n• Berat (100/250/500 gr — 500 gr Rp25.000): \n• Jumlah bungkus: \n• Level pedas (sedang/pedas/extra): \n• Dikirim (JNE/J&T) atau ambil sendiri: \nMohon info total harganya ya. Terima kasih!"
   ),
 };
 
@@ -118,13 +118,13 @@ export const LAYANAN: Layanan[] = [
   {
     id: "sambal-pecel",
     nama: "Sambal Pecel Madiun",
-    hargaMulai: "Rp 15.000",
-    satuan: "/botol 200 ml",
-    minOrder: "Tanpa minimal",
+    hargaMulai: "Rp 25.000",
+    satuan: "/500 gram",
+    minOrder: "Min. 100 gram",
     deskripsi:
-      "Sambal pecel khas Madiun — kacang goreng, cabai, kencur, dan gula jawa diulek manual tanpa pengawet. Dikemas botol siap kirim: untuk stok dapur, oleh-oleh, atau dijual ulang di warung. Bisa dikirim ke seluruh Indonesia via ekspedisi.",
-    gambar: "/images/galeri-sambal.jpg",
-    alt: "Sambal pecel Madiun asli diulek di cobek batu oleh Watiyem",
+      "Sambal pecel khas Madiun dalam bentuk KERING — kacang sangrai, cabai, kencur, dan gula jawa diulek manual tanpa pengawet, dijual bebas per gram (Rp50/gram). Dikemas pouch sealed: tinggal seduh air panas — untuk stok dapur, oleh-oleh, atau stok warung. Bisa dikirim ke seluruh Indonesia via ekspedisi.",
+    gambar: "/images/sambal-pecel.jpg",
+    alt: "Sambal pecel Madiun kering berbutir di atas daun pisang dengan kemasan pouch transparan dari Watiyem",
     cocok: ["Stok dapur", "Oleh-oleh", "Warung & langganan", "Kirim ekspedisi"],
     wa: PESAN_WA.sambalPecel,
   },
@@ -224,22 +224,22 @@ export const MENU_TABS: Record<string, { label: string; catatan: string; paket: 
   "sambal-pecel": {
     label: "Sambal Pecel",
     catatan:
-      "Sambal pecel khas Madiun tanpa pengawet. Awet ±1 bulan di kulkas (±2 minggu suhu ruang) — gunakan sendok kering saat mengambil. Level pedas bisa request, dan pengiriman luar kota via JNE/J&T dengan packing aman.",
+      "Sambal pecel khas Madiun bentuk KERING tanpa pengawet — tinggal seduh air panas, siap disiram ke sayur. Dijual bebas per gram (Rp50/gram), dikemas pouch sealed. Level pedas bisa request, dan pengiriman luar kota via JNE/J&T dengan packing aman.",
     paket: [
       {
-        nama: "Botol 200 ml",
-        harga: "Rp 15.000",
-        isi: "Kacang goreng halus · cabai & kencur · gula jawa · setara ±10 porsi sayur",
+        nama: "Coba 100 gr",
+        harga: "Rp 5.000",
+        isi: "Setara ±5 porsi sayur · pas untuk mencoba atau jajan kecil",
       },
       {
-        nama: "Botol 350 ml",
-        harga: "Rp 22.000",
-        isi: "Isi lebih besar · setara ±18 porsi · favorit oleh-oleh & reuni keluarga",
+        nama: "250 gr",
+        harga: "Rp 12.500",
+        isi: "Setara ±12 porsi · cocok untuk keluarga kecil di rumah",
       },
       {
-        nama: "Botol 500 ml",
-        harga: "Rp 30.000",
-        isi: "Paling hemat · setara ±25 porsi · cocok untuk keluarga besar & stok warung",
+        nama: "500 gr (Favorit)",
+        harga: "Rp 25.000",
+        isi: "Setara ±25 porsi · paling dicari untuk stok dapur, oleh-oleh & warung",
       },
     ],
   },
@@ -252,7 +252,7 @@ export const TENTANG = {
   fotoAlt: "Bu Watiyem di dapurnya di Tebon, Magetan — pemilik sambal pecel & katering Watiyem",
   paragraf: [
     "Semua bermula dari dapur kecil di Tebon, Magetan Barat. Bu Watiyem mulai memasak untuk tetangga — ada syukuran, ada pengajian, ada acara kantor yang butuh nasi box. Yang datang pulang membawa cerita: masakannya enak, porsinya jujur, dan harganya masuk akal.",
-    "Dari cerita ke cerita, pesanan pun tumbuh. Kini dapur Watiyem setiap subuh sudah sibuk meracik bumbu — sambal diulek sendiri di cobek, bumbu kuning dan semur diracik dari resep keluarga yang sudah puluhan tahun dipakai. Termasuk sambal pecel khas Madiun yang kini dikemas botol dan dikirim sampai luar kota. Tidak ada masakan stok semalam, karena bagi kami, acara Anda adalah reputasi dapur kami.",
+    "Dari cerita ke cerita, pesanan pun tumbuh. Kini dapur Watiyem setiap subuh sudah sibuk meracik bumbu — sambal diulek sendiri di cobek, bumbu kuning dan semur diracik dari resep keluarga yang sudah puluhan tahun dipakai. Termasuk sambal pecel khas Madiun yang kini dikemas kering, dijual per gram, dan dikirim sampai luar kota. Tidak ada masakan stok semalam, karena bagi kami, acara Anda adalah reputasi dapur kami.",
   ],
   kutipan: {
     teks: "Enak itu standar. Yang bikin orang balik lagi adalah porsi yang jujur dan makanan yang datang tepat waktu.",
@@ -297,10 +297,10 @@ export const GALERI = [
     teks: "Menu berganti tiap hari, diantar tepat jam makan siang.",
   },
   {
-    gambar: "/images/sambal-pecel.jpg",
-    alt: "Sambal pecel Madiun asli dalam botol siap kirim dari Watiyem",
-    judul: "Sambal Pecel Botol",
-    teks: "Khas Madiun, tanpa pengawet — bisa kirim ke seluruh Indonesia.",
+    gambar: "/images/galeri-sambal.jpg",
+    alt: "Sambal pecel Madiun kering diulek manual di cobek batu oleh Watiyem",
+    judul: "Sambal Pecel Kering",
+    teks: "Diulek di cobek, dijual per gram — seduh air panas, siap disiram.",
   },
 ] as const;
 
@@ -312,7 +312,7 @@ export const KEUNGGULAN = [
   },
   {
     judul: "Harga Bersahabat",
-    teks: "Nasi box mulai Rp15 ribu, snack box mulai Rp8 ribu, sambal pecel botol mulai Rp15 ribu — pas untuk budget kantor, keluarga, dan mahasiswa.",
+    teks: "Nasi box mulai Rp15 ribu, snack box mulai Rp8 ribu, sambal pecel kering mulai Rp5 ribu (500 gr Rp25 ribu) — pas untuk budget kantor, keluarga, dan mahasiswa.",
     ikon: "wallet",
   },
   {
@@ -423,11 +423,15 @@ export const FAQ = [
     a: "Perubahan jumlah atau menu masih bisa dilakukan sampai H-2 sebelum acara. Untuk pembatalan, DP dikembalikan penuh bila info masuk lebih dari 3 hari sebelum acara — kami hanya menahan biaya bahan yang sudah dibeli.",
   },
   {
+    q: "Sambal pecel Madiun-nya kok bentuknya kering?",
+    a: "Betul — sambal pecel Madiun asli memang bentuknya kering (bukan botolan basah), seperti yang dijual di sentra pecel Madiun. Kacang sangrai, cabai, kencur, dan gula jawa diulek kasar lalu dikemas pouch sealed tanpa pengawet. Cara pakainya gampang: ambil sesuai kebutuhan, seduh air panas, aduk, lalu siram ke sayur — rasa tetap sama nampol seperti pecel langganan Anda.",
+  },
+  {
     q: "Sambal pecel Madiun-nya awet berapa lama?",
-    a: "Sambal pecel kami dibuat tanpa pengawet, jadi di kulkas tahan hingga ±1 bulan dan di suhu ruang ±2 minggu. Kuncinya selalu ambil pakai sendok kering. Botol 500 ml paling hemat untuk keluarga besar atau stok warung, dan level pedasnya bisa request sesuai selera.",
+    a: "Karena bentuknya kering, sambal pecel kami jauh lebih awet dari sambal basah — tahan ±3 bulan di suhu ruang dan bisa sampai ±6 bulan di kulkas, tanpa pengawet. Kuncinya ambil pakai sendok kering lalu tutup rapat lagi. Kemasan 500 gram (Rp25.000) paling hemat untuk keluarga besar atau stok warung, dan level pedasnya bisa request sesuai selera.",
   },
   {
     q: "Apakah sambal pecel bisa dikirim ke luar kota?",
-    a: "Bisa. Sambal pecel dalam botol sudah teruji dikirim via JNE/J&T ke berbagai kota dengan packing bubble wrap dan segel ganda — ongkir ditanggung pembeli. Untuk katering, layanan antar kami mencakup Magetan dan sekitarnya (±20 km). Chat saja untuk hitung estimasi ongkirnya.",
+    a: "Bisa. Sambal pecel kering dikemas pouch sealed rapat dan sudah teruji dikirim via JNE/J&T ke berbagai kota dengan packing bubble wrap — ongkir ditanggung pembeli. Bentuknya kering jadi aman dan tidak tumpah dalam perjalanan. Untuk katering, layanan antar kami mencakup Magetan dan sekitarnya (±20 km). Chat saja untuk hitung estimasi ongkirnya.",
   },
 ] as const;

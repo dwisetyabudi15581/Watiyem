@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berikut hasil verifikasi untuk kartu produk **Sambal Pecel Madiun**:\n\n**1. Tampilan Foto Produk:**\n*   **Status:** **PASS**\n*   **Detail:** Foto menampilkan sambal pecel dalam kondisi **KERING**, berbutir kasar, dan berwarna coklat kemerahan (oranye-merah). Sambal tersebut ditumpuk di atas piring/anyaman yang dilapisi daun pisang. Di sampingnya terlihat kemasan **pouch transparan** (berisi sambal serupa) dan bahan-bahan seperti kacang sangrai serta cabai.\n\n**2. Informasi Harga:**\n*   **Status:** **FAIL**\n*   **Detail:** \n    *   Harga yang tertulis adalah **Rp 25.000 /hari** (bukan /500 gram).\n    *   Keterangan minimum order di foto tertulis **\"Min. 100 gram\"** (ini sesuai), namun satuan harga tidak sesuai dengan permintaan (/500 gram).\n\n**3. Layout:**\n*   **Status:** **PASS**\n*   **Detail:** Layout kartu terlihat rapi, bersih, dan terstruktur dengan baik (gambar, judul, deskripsi, tag, dll.). Tata letak sejajar dengan kartu lainnya.\n\n**4. Cacat AI pada Foto:**\n*   **Status:** **PASS**\n*   **Detail:** Tidak ditemukan cacat AI yang signifikan seperti teks aneh (gibberish) atau objek yang terdistorsi secara tidak wajar. Foto tampak natural dan jelas.\n\n---\n\n### **Verdict: FAIL**\n\n**Alasan:** Meskipun tampilan visual (foto) dan layout sangat baik serta bebas dari cacat AI, terdapat **ketidaksesuaian pada informasi harga**. Harga tertulis \"Rp 25.000 /hari\", bukan \"Rp 25.000 /500 gram\" seperti yang diminta dalam kriteria QA.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791879146,
+  "id": "20261013161215ceb9865d1ac146e3",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013161215ceb9865d1ac146e3",
+  "usage": {
+    "completion_tokens": 447,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1548,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1995
+  }
+}

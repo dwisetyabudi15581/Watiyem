@@ -86,7 +86,7 @@ export function Hero() {
             <span>Snack box mulai <strong className="font-semibold text-brand">Rp8rb</strong></span>
             <span className="hidden h-4 w-px bg-brand-border sm:block" aria-hidden="true" />
             <span>
-              Sambal pecel botol <strong className="font-semibold text-brand">Rp15rb</strong>
+              Sambal pecel kering <strong className="font-semibold text-brand">Rp5rb</strong>
             </span>
           </div>
         </div>

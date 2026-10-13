@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berdasarkan kartu produk **Sambal Pecel Madiun** pada gambar:\n\n1) **Harga dan satuan:** Rp 25.000 /500 gram\n2) **Minimal order:** 100 gram (tertulis \"Min. 100 gram\" di pojok kiri atas foto produk)\n3) **Kualitas foto:** Foto produk sambal kering dalam toples kaca tampak jelas, natural, tanpa cacat AI (tidak ada distorsi anatomi, tekstur tidak aneh, dan proporsi benda logis).\n\n**Verdict: PASS**",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791879221,
+  "id": "20261013161336c700733b240c44bd",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013161336c700733b240c44bd",
+  "usage": {
+    "completion_tokens": 132,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1492,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1624
+  }
+}

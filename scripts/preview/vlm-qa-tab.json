@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Verdict: PASS**\n\n**Detail Verifikasi:**\n\n1.  **Paket Harga:** Terdapat 3 paket harga sesuai permintaan:\n    *   **Coba 100 gr: Rp 5.000**\n    *   **250 gr: Rp 12.500**\n    *   **500 gr (Favorit): Rp 25.000**\n2.  **Layout Kartu:** Layout kartu rapi, sejajar horizontal, dan tidak ada tumpang tindih (overlap) antar elemen.\n3.  **Teks Keterangan:** Teks keterangan di bawah kartu menyebutkan dengan jelas bahwa sambal berbentuk **\"KERING\"** dan cara penyajiannya adalah **\"tinggal seduh air panas\"**.\n4.  **Cacat Visual:** Tidak ditemukan cacat visual yang mengganggu (broken image, text overflow, atau alignment error). Desain terlihat bersih dan profesional.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791879135,
+  "id": "2026101316120271d3d43c6a3049b4",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026101316120271d3d43c6a3049b4",
+  "usage": {
+    "completion_tokens": 217,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1534,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1751
+  }
+}

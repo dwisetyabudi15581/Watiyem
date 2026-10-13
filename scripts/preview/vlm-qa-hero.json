@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Verdict: PASS**\n\n**Detail Pemeriksaan:**\n*   **Judul:** Terbaca jelas (\"Sambal Pecel Madiun & Katering Lezat di Magetan\").\n*   **Strip Harga:** Tersedia dan terbaca jelas (\"Sambal pecel kering **Rp5rb**\" berwarna merah).\n*   **Tombol WhatsApp:** Terlihat jelas (hijau solid dengan ikon telepon).\n*   **Layout Mobile:** Rapi, tidak ada overflow horizontal, konten pas dalam lebar 390px.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791879164,
+  "id": "202610131612398fede5a78ef4442d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610131612398fede5a78ef4442d",
+  "usage": {
+    "completion_tokens": 133,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 478,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 611
+  }
+}

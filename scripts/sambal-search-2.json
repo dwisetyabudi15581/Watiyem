@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "query": "bumbu pecel Madiun kering 500 gram kemasan pouch",
+  "count": 8,
+  "ranked": true,
+  "captioned_count": 8,
+  "results": [
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/88262ace3217.webp",
+      "caption": "Packaged Indonesian Sambel Pecel Madiun \"Asli Selo\" spicy peanut sauce, 150 grams, labeled \"EXTRA PEDAS\".",
+      "source": "Blibli",
+      "original_width": "1200px",
+      "original_height": "1200px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/5def7ccdc667.jpg",
+      "caption": "A promotional product image of \"Sambal Pecel Kraton\" (500 Gram) spice paste container, with badges: \"BEST SELLER,\" \"100% NATURAL,\" \"100% PREMIUM QUALITY,\" and text \"ASLI MADIUN PENGIRIMAN DARI BEKASI.\" Contains watermarks and promotional logos.",
+      "source": "Lazada",
+      "original_width": "2000px",
+      "original_height": "2000px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/6b4af9526ec4.jpg",
+      "caption": "Food remnants in a crumpled plastic wrap on a wooden table; blurry, with Lemon8 watermark \"@galleryainun\". Contains watermark, not suitable for background.",
+      "source": "Lemon8-app",
+      "original_width": "2296px",
+      "original_height": "3061px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/41926f70c326.jpg",
+      "caption": "Close-up of a chunky reddish-brown food mixture with crushed peanuts, chili, and herbs, glossy texture, high clarity, no text.",
+      "source": "YouTube",
+      "original_width": "1280px",
+      "original_height": "720px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/42d19d91fe06.jpg",
+      "caption": "Product advertisement for \"Sambal Kacang Khas Madiun\" 500g pack containing two foil packages with Wong Ndeso brand labels and badges.",
+      "source": "Shopee",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/32c3b80be851.jpeg",
+      "caption": "A packaged Indonesian Sambal Pecel chili paste labeled \"Cap SINTi\" by PT. INDRAMUKTI SEGARA, 100 g.",
+      "source": "ASTRO",
+      "original_width": "900px",
+      "original_height": "900px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/c6237a7139fe.webp",
+      "caption": "A plastic-packaged Indonesian Sambal Pecel \"Cabe Merah\" product with label text, barcode, halal logo, and expiry sticker; contains product packaging with substantial text, not suitable as background image.",
+      "source": "Blibli",
+      "original_width": "1080px",
+      "original_height": "1080px"
+    },
+    {
+      "original_url": "https://z-cdn.chatglm.cn/image-search-mcp/images-ppt/3de012953bce.jpg",
+      "caption": "Product advertisement for \"BUMBU PECCEL\" spice paste packages with logo \"Sayur Mayur Nur\" and labels reading \"Pecel Ayah Sedang.\"",
+      "source": "Shopee",
+      "original_width": "1024px",
+      "original_height": "1024px"
+    }
+  ]
+}
