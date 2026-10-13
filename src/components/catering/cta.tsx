@@ -39,7 +39,7 @@ export function Cta() {
                 href={PESAN_WA.umum}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Pesan catering Catering Watiyem via WhatsApp sekarang"
+                aria-label="Pesan sambal pecel & katering via WhatsApp sekarang"
               >
                 <Phone className="size-5" aria-hidden="true" />
                 Pesan via WhatsApp

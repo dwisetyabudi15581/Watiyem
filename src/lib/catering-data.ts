@@ -1,13 +1,13 @@
 /**
- * Data & konten website Catering Watiyem — Magetan, Jawa Timur.
- * Seluruh teks mengikuti Panduan Website & SEO Lokal Catering Watiyem.
+ * Data & konten website Watiyem — Magetan, Jawa Timur.
+ * Seluruh teks mengikuti Panduan Website & SEO Lokal Watiyem.
  */
 
 export const BISNIS = {
-  nama: "Catering Watiyem",
-  tagline: "Jasa Catering Makanan Lezat & Murah di Magetan",
+  nama: "Watiyem — Sambal Pecel Madiun & Katering",
+  tagline: "Sambal Pecel Madiun Asli & Katering Lezat–Murah di Magetan",
   subTagline:
-    "Nasi Box, Prasmanan, Catering Harian, dan Snack Box — dimasak fresh setiap hari untuk acara syukuran, acara kantor, keluarga, dan mahasiswa di Magetan dan sekitarnya.",
+    "Sambal pecel Madiun tanpa pengawet dalam botol, nasi box, prasmanan, catering harian, dan snack box — dimasak fresh setiap hari untuk keluarga, acara syukuran, kantor, dan mahasiswa di Magetan dan sekitarnya.",
   telepon: "+62 857-0680-0961",
   waNumber: "6285706800961",
   alamat:
@@ -27,22 +27,25 @@ export function waLink(pesan: string): string {
 
 export const PESAN_WA = {
   umum: waLink(
-    "Halo Catering Watiyem 🙏\nSaya mau tanya-tanya dulu tentang catering untuk acara saya di Magetan. Boleh dikirim menu dan harga terbaru? Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau tanya-tanya dulu tentang catering untuk acara saya di Magetan. Boleh dikirim menu dan harga terbaru? Terima kasih!"
   ),
   nasiBox: waLink(
-    "Halo Catering Watiyem 🙏\nSaya mau pesan *Nasi Box* untuk acara:\n• Tanggal acara: \n• Jumlah box: \n• Paket (Hemat/Standar/Premium): \n• Lokasi pengantaran: \nMohon info total harga dan ketersediaan tanggalnya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau pesan *Nasi Box* untuk acara:\n• Tanggal acara: \n• Jumlah box: \n• Paket (Hemat/Standar/Premium): \n• Lokasi pengantaran: \nMohon info total harga dan ketersediaan tanggalnya ya. Terima kasih!"
   ),
   prasmanan: waLink(
-    "Halo Catering Watiyem 🙏\nSaya mau konsultasi *Prasmanan* untuk acara kantor/instansi:\n• Nama instansi: \n• Tanggal acara: \n• Estimasi jumlah pax: \n• Budget per pax: \n• Lokasi acara: \nMohon dibantu rekomendasi menu terbaiknya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau konsultasi *Prasmanan* untuk acara kantor/instansi:\n• Nama instansi: \n• Tanggal acara: \n• Estimasi jumlah pax: \n• Budget per pax: \n• Lokasi acara: \nMohon dibantu rekomendasi menu terbaiknya ya. Terima kasih!"
   ),
   harian: waLink(
-    "Halo Catering Watiyem 🙏\nSaya tertarik *Catering Harian* (langganan makan siang):\n• Nama: \n• Alamat pengantaran: \n• Waktu makan siang yang diinginkan: \n• Mulai langganan: \n• Alergi / menu yang dihindari: \nMohon info paket mingguannya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya tertarik *Catering Harian* (langganan makan siang):\n• Nama: \n• Alamat pengantaran: \n• Waktu makan siang yang diinginkan: \n• Mulai langganan: \n• Alergi / menu yang dihindari: \nMohon info paket mingguannya ya. Terima kasih!"
   ),
   snackBox: waLink(
-    "Halo Catering Watiyem 🙏\nSaya mau pesan *Snack Box* untuk rapat/seminar:\n• Tanggal: \n• Jumlah box: \n• Pilihan isi (risoles/pastel/lumpia/campur): \n• Lokasi: \nMohon info harga dan minimal ordernya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau pesan *Snack Box* untuk rapat/seminar:\n• Tanggal: \n• Jumlah box: \n• Pilihan isi (risoles/pastel/lumpia/campur): \n• Lokasi: \nMohon info harga dan minimal ordernya ya. Terima kasih!"
   ),
   syukuran: waLink(
-    "Halo Catering Watiyem 🙏\nSaya mau tanya paket *syukuran/tumpengan*:\n• Tanggal acara: \n• Perkiraan jumlah tamu: \n• Lokasi: \nMohon info paket dan harganya ya. Terima kasih!"
+    "Halo Watiyem 🙏\nSaya mau tanya paket *syukuran/tumpengan*:\n• Tanggal acara: \n• Perkiraan jumlah tamu: \n• Lokasi: \nMohon info paket dan harganya ya. Terima kasih!"
+  ),
+  sambalPecel: waLink(
+    "Halo Watiyem 🙏\nSaya mau pesan *Sambal Pecel Madiun*:\n• Ukuran botol (200/350/500 ml): \n• Jumlah botol: \n• Level pedas (sedang/pedas/extra): \n• Dikirim atau ambil sendiri: \nMohon info total harganya ya. Terima kasih!"
   ),
 };
 
@@ -69,7 +72,7 @@ export const LAYANAN: Layanan[] = [
     deskripsi:
       "Jawaban praktis untuk rapat kantor, acara syukuran, pengajian, hingga seminar di Magetan. Setiap box berisi nasi hangat, lauk pilihan, sayur segar, sambal, dan kerupuk — dimasak fresh di pagi harinya.",
     gambar: "/images/nasi-box.jpg",
-    alt: "Nasi box catering Magetan berisi nasi kuning, ayam, dan lauk pendamping dari Catering Watiyem",
+    alt: "Nasi box catering Magetan berisi nasi kuning, ayam, dan lauk pendamping dari Watiyem",
     cocok: ["Rapat kantor", "Syukuran", "Pengajian", "Seminar"],
     wa: PESAN_WA.nasiBox,
   },
@@ -82,7 +85,7 @@ export const LAYANAN: Layanan[] = [
     deskripsi:
       "Paket lengkap untuk gathering, halal bihalal, dan acara kantor: nasi, lauk utama, sayur, sambal, hingga dessert dan minuman. Stand prasmanan dirapikan dengan etalase tertutup agar tetap higienis sepanjang acara.",
     gambar: "/images/prasmanan.jpg",
-    alt: "Stand prasmanan buffet catering acara kantor di Magetan oleh Catering Watiyem",
+    alt: "Stand prasmanan buffet catering acara kantor di Magetan oleh Watiyem",
     cocok: ["Acara kantor", "Halal bihalal", "Gathering", "Syukuran besar"],
     wa: PESAN_WA.prasmanan,
   },
@@ -95,7 +98,7 @@ export const LAYANAN: Layanan[] = [
     deskripsi:
       "Langganan makan siang untuk karyawan, anak kos, dan keluarga di area Magetan. Menu berganti setiap hari Senin–Sabtu, dimasak pagi hari, dan diantar tepat waktu sekitar pukul 11.00.",
     gambar: "/images/harian.jpg",
-    alt: "Menu catering harian makan siang rumahan Magetan dari Catering Watiyem",
+    alt: "Menu catering harian makan siang rumahan Magetan dari Watiyem",
     cocok: ["Karyawan", "Anak kos", "Mahasiswa", "Keluarga"],
     wa: PESAN_WA.harian,
   },
@@ -108,9 +111,22 @@ export const LAYANAN: Layanan[] = [
     deskripsi:
       "Snack box untuk coffee break rapat, seminar, dan pelatihan di Magetan. Risoles, pastel, lumpia, dan kudapan lain dibuat pada hari yang sama sehingga tetap renyah sampai sesi terakhir acara Anda.",
     gambar: "/images/snack-box.jpg",
-    alt: "Snack box risoles dan pastel untuk coffee break seminar dari Catering Watiyem Magetan",
+    alt: "Snack box risoles dan pastel untuk coffee break seminar dari Watiyem Magetan",
     cocok: ["Coffee break", "Seminar", "Pelatihan", "Rapat"],
     wa: PESAN_WA.snackBox,
+  },
+  {
+    id: "sambal-pecel",
+    nama: "Sambal Pecel Madiun",
+    hargaMulai: "Rp 15.000",
+    satuan: "/botol 200 ml",
+    minOrder: "Tanpa minimal",
+    deskripsi:
+      "Sambal pecel khas Madiun — kacang goreng, cabai, kencur, dan gula jawa diulek manual tanpa pengawet. Dikemas botol siap kirim: untuk stok dapur, oleh-oleh, atau dijual ulang di warung. Bisa dikirim ke seluruh Indonesia via ekspedisi.",
+    gambar: "/images/galeri-sambal.jpg",
+    alt: "Sambal pecel Madiun asli diulek di cobek batu oleh Watiyem",
+    cocok: ["Stok dapur", "Oleh-oleh", "Warung & langganan", "Kirim ekspedisi"],
+    wa: PESAN_WA.sambalPecel,
   },
 ];
 
@@ -205,23 +221,45 @@ export const MENU_TABS: Record<string, { label: string; catatan: string; paket: 
       },
     ],
   },
+  "sambal-pecel": {
+    label: "Sambal Pecel",
+    catatan:
+      "Sambal pecel khas Madiun tanpa pengawet. Awet ±1 bulan di kulkas (±2 minggu suhu ruang) — gunakan sendok kering saat mengambil. Level pedas bisa request, dan pengiriman luar kota via JNE/J&T dengan packing aman.",
+    paket: [
+      {
+        nama: "Botol 200 ml",
+        harga: "Rp 15.000",
+        isi: "Kacang goreng halus · cabai & kencur · gula jawa · setara ±10 porsi sayur",
+      },
+      {
+        nama: "Botol 350 ml",
+        harga: "Rp 22.000",
+        isi: "Isi lebih besar · setara ±18 porsi · favorit oleh-oleh & reuni keluarga",
+      },
+      {
+        nama: "Botol 500 ml",
+        harga: "Rp 30.000",
+        isi: "Paling hemat · setara ±25 porsi · cocok untuk keluarga besar & stok warung",
+      },
+    ],
+  },
 };
 
 export const TENTANG = {
   kicker: "Tentang Kami",
   judul: "Berkenalan dengan Bu Watiyem",
   foto: "/images/bu-watiyem.jpg",
-  fotoAlt: "Bu Watiyem, pemilik Catering Watiyem, di dapurnya di Tebon Magetan",
+  fotoAlt: "Bu Watiyem di dapurnya di Tebon, Magetan — pemilik sambal pecel & katering Watiyem",
   paragraf: [
     "Semua bermula dari dapur kecil di Tebon, Magetan Barat. Bu Watiyem mulai memasak untuk tetangga — ada syukuran, ada pengajian, ada acara kantor yang butuh nasi box. Yang datang pulang membawa cerita: masakannya enak, porsinya jujur, dan harganya masuk akal.",
-    "Dari cerita ke cerita, pesanan pun tumbuh. Kini dapur Catering Watiyem setiap subuh sudah sibuk meracik bumbu — sambal diulek sendiri di cobek, bumbu kuning dan semur diracik dari resep keluarga yang sudah puluhan tahun dipakai. Tidak ada masakan stok semalam, karena bagi kami, acara Anda adalah reputasi dapur kami.",
+    "Dari cerita ke cerita, pesanan pun tumbuh. Kini dapur Watiyem setiap subuh sudah sibuk meracik bumbu — sambal diulek sendiri di cobek, bumbu kuning dan semur diracik dari resep keluarga yang sudah puluhan tahun dipakai. Termasuk sambal pecel khas Madiun yang kini dikemas botol dan dikirim sampai luar kota. Tidak ada masakan stok semalam, karena bagi kami, acara Anda adalah reputasi dapur kami.",
   ],
   kutipan: {
     teks: "Enak itu standar. Yang bikin orang balik lagi adalah porsi yang jujur dan makanan yang datang tepat waktu.",
     pembicara: "Bu Watiyem — pemilik & kepala dapur",
   },
   statistik: [
-    { angka: "4", label: "layanan utama" },
+    { angka: "5", label: "produk & layanan utama" },
     { angka: "±20 km", label: "area layanan Magetan & sekitarnya" },
     { angka: "Setiap hari", label: "masak fresh, buka 07.00–20.00" },
   ],
@@ -230,7 +268,7 @@ export const TENTANG = {
 export const GALERI = [
   {
     gambar: "/images/galeri-nasibox.jpg",
-    alt: "Nasi box kuning dengan ayam goreng crispy dari Catering Watiyem Magetan",
+    alt: "Nasi box kuning dengan ayam goreng crispy dari Watiyem Magetan",
     judul: "Nasi Box",
     teks: "Dimasak pagi hari, dikirim sebelum acara dimulai.",
   },
@@ -259,10 +297,10 @@ export const GALERI = [
     teks: "Menu berganti tiap hari, diantar tepat jam makan siang.",
   },
   {
-    gambar: "/images/galeri-sambal.jpg",
-    alt: "Sambal segar diulek di cobek batu setiap subuh",
-    judul: "Sambal Ulek Sendiri",
-    teks: "Bumbu diracik sendiri setiap subuh — bukan bumbu instan.",
+    gambar: "/images/sambal-pecel.jpg",
+    alt: "Sambal pecel Madiun asli dalam botol siap kirim dari Watiyem",
+    judul: "Sambal Pecel Botol",
+    teks: "Khas Madiun, tanpa pengawet — bisa kirim ke seluruh Indonesia.",
   },
 ] as const;
 
@@ -274,7 +312,7 @@ export const KEUNGGULAN = [
   },
   {
     judul: "Harga Bersahabat",
-    teks: "Nasi box mulai Rp15 ribu dan snack box mulai Rp8 ribu — pas untuk budget kantor, keluarga, dan mahasiswa.",
+    teks: "Nasi box mulai Rp15 ribu, snack box mulai Rp8 ribu, sambal pecel botol mulai Rp15 ribu — pas untuk budget kantor, keluarga, dan mahasiswa.",
     ikon: "wallet",
   },
   {
@@ -383,5 +421,13 @@ export const FAQ = [
   {
     q: "Bagaimana kalau pesanan ingin diubah atau dibatalkan?",
     a: "Perubahan jumlah atau menu masih bisa dilakukan sampai H-2 sebelum acara. Untuk pembatalan, DP dikembalikan penuh bila info masuk lebih dari 3 hari sebelum acara — kami hanya menahan biaya bahan yang sudah dibeli.",
+  },
+  {
+    q: "Sambal pecel Madiun-nya awet berapa lama?",
+    a: "Sambal pecel kami dibuat tanpa pengawet, jadi di kulkas tahan hingga ±1 bulan dan di suhu ruang ±2 minggu. Kuncinya selalu ambil pakai sendok kering. Botol 500 ml paling hemat untuk keluarga besar atau stok warung, dan level pedasnya bisa request sesuai selera.",
+  },
+  {
+    q: "Apakah sambal pecel bisa dikirim ke luar kota?",
+    a: "Bisa. Sambal pecel dalam botol sudah teruji dikirim via JNE/J&T ke berbagai kota dengan packing bubble wrap dan segel ganda — ongkir ditanggung pembeli. Untuk katering, layanan antar kami mencakup Magetan dan sekitarnya (±20 km). Chat saja untuk hitung estimasi ongkirnya.",
   },
 ] as const;

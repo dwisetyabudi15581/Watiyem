@@ -20,7 +20,7 @@ export function FloatingWa() {
       href={PESAN_WA.umum}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat Catering Watiyem via WhatsApp — tombol mengambang"
+      aria-label="Chat Watiyem via WhatsApp — tombol mengambang"
       className="fixed bottom-5 right-5 z-50 flex size-14 items-center justify-center rounded-full bg-wa text-white shadow-xl shadow-wa/40 transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-wa/30 sm:bottom-7 sm:right-7"
     >
       <WhatsAppIcon className="size-7" />

@@ -86,7 +86,7 @@ export function TentangKami() {
                 href={PESAN_WA.umum}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat langsung dengan Catering Watiyem via WhatsApp"
+                aria-label="Chat langsung dengan Bu Watiyem via WhatsApp"
               >
                 <Phone className="size-4" aria-hidden="true" />
                 Chat Langsung dengan Bu Watiyem

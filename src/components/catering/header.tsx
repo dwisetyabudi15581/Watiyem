@@ -26,17 +26,17 @@ export function Header() {
         <Link
           href="#beranda"
           className="flex items-center gap-2.5"
-          aria-label="Catering Watiyem — kembali ke beranda"
+          aria-label="Watiyem — kembali ke beranda"
         >
           <span className="flex size-10 items-center justify-center rounded-xl bg-brand text-white shadow-sm">
             <UtensilsCrossed className="size-5" aria-hidden="true" />
           </span>
           <span className="leading-tight">
             <span className="block text-base font-extrabold tracking-tight text-foreground sm:text-lg">
-              Catering Watiyem
+              Watiyem
             </span>
             <span className="hidden text-[11px] font-medium text-muted-foreground sm:block">
-              Magetan &amp; sekitarnya
+              Sambal Pecel Madiun &amp; Katering
             </span>
           </span>
         </Link>

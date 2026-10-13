@@ -28,8 +28,8 @@ export function Hero() {
           </Badge>
 
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
-            Jasa Catering Makanan{" "}
-            <span className="text-brand">Lezat &amp; Murah</span> di Magetan
+            Sambal Pecel Madiun &amp;{" "}
+            <span className="text-brand">Katering Lezat</span> di Magetan
           </h1>
 
           <p className="mt-4 max-w-xl text-base leading-relaxed text-foreground/70 sm:text-lg">
@@ -47,7 +47,7 @@ export function Hero() {
                 href={PESAN_WA.umum}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat Catering Watiyem via WhatsApp sekarang"
+                aria-label="Chat Watiyem via WhatsApp sekarang"
               >
                 <Phone className="size-5" aria-hidden="true" />
                 Pesan via WhatsApp
@@ -84,6 +84,10 @@ export function Hero() {
             </span>
             <span className="hidden h-4 w-px bg-brand-border sm:block" aria-hidden="true" />
             <span>Snack box mulai <strong className="font-semibold text-brand">Rp8rb</strong></span>
+            <span className="hidden h-4 w-px bg-brand-border sm:block" aria-hidden="true" />
+            <span>
+              Sambal pecel botol <strong className="font-semibold text-brand">Rp15rb</strong>
+            </span>
           </div>
         </div>
 
@@ -91,7 +95,7 @@ export function Hero() {
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl border-8 border-white shadow-2xl shadow-brand/15">
             <Image
               src="/images/hero.jpg"
-              alt="Nasi box catering Magetan berisi nasi kuning, ayam bumbu, sayur, dan lauk pendamping dari Catering Watiyem"
+              alt="Nasi box katering Magetan berisi nasi kuning, ayam bumbu, sayur, dan lauk pendamping dari Watiyem"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"

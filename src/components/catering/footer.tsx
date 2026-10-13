@@ -23,7 +23,7 @@ export function Footer() {
       aria-labelledby="judul-footer"
     >
       <h2 id="judul-footer" className="sr-only">
-        Informasi kontak Catering Watiyem
+        Informasi kontak Watiyem
       </h2>
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-4">
         <div className="lg:col-span-2">
@@ -32,14 +32,15 @@ export function Footer() {
               <UtensilsCrossed className="size-5" aria-hidden="true" />
             </span>
             <span className="text-lg font-extrabold tracking-tight text-foreground">
-              Catering Watiyem
+              Watiyem
             </span>
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-foreground/65">
-            Dapur rumahan di Tebon, Magetan Barat, yang setiap hari menyiapkan nasi
-            box, prasmanan, langganan makan siang, dan snack box untuk warga Magetan
-            dan sekitarnya. Semua menu dimasak fresh, bumbunya diracik sendiri, dan
-            porsinya jujur — karena bagi kami, acara Anda adalah reputasi kami.
+            Dapur rumahan di Tebon, Magetan Barat, yang setiap hari menyiapkan
+            sambal pecel Madiun botol, nasi box, prasmanan, langganan makan
+            siang, dan snack box untuk warga Magetan dan sekitarnya. Semua menu
+            dimasak fresh, bumbunya diracik sendiri, dan porsinya jujur — karena
+            bagi kami, acara Anda adalah reputasi kami.
           </p>
         </div>
 
@@ -100,7 +101,7 @@ export function Footer() {
         <div className="relative overflow-hidden rounded-2xl border border-brand-border shadow-sm">
           <iframe
             src={MAPS_EMBED}
-            title="Peta lokasi Catering Watiyem di Setro, Tebon, Magetan Barat"
+            title="Peta lokasi Watiyem di Setro, Tebon, Magetan Barat"
             className="h-64 w-full sm:h-72"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -110,7 +111,7 @@ export function Footer() {
           <div className="pointer-events-none absolute left-3 top-3 max-w-[85%] rounded-xl bg-white/95 p-3 shadow-lg backdrop-blur sm:left-4 sm:top-4">
             <p className="flex items-center gap-1.5 text-sm font-extrabold text-foreground">
               <MapPin className="size-4 shrink-0 text-brand" aria-hidden="true" />
-              Catering Watiyem
+              Watiyem
             </p>
             <p className="mt-1 text-xs leading-snug text-foreground/70">
               {BISNIS.alamat}
@@ -134,7 +135,8 @@ export function Footer() {
       <div className="border-t border-brand-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p>
-            © {new Date().getFullYear()} Catering Watiyem — Magetan, Jawa Timur.
+            © {new Date().getFullYear()} Watiyem — Sambal Pecel Madiun &amp;
+            Katering, Magetan.
           </p>
           <p>Area layanan: {BISNIS.area}</p>
         </div>

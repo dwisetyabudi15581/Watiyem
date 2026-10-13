@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { Phone, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { LAYANAN } from "@/lib/catering-data";
+import { LAYANAN, PESAN_WA } from "@/lib/catering-data";
 
 export function Layanan() {
   return (
@@ -21,15 +21,15 @@ export function Layanan() {
             id="judul-layanan"
             className="mt-2 text-2xl font-extrabold tracking-tight text-foreground sm:text-3xl"
           >
-            Empat Layanan untuk Setiap Acara Anda
+            Lima Produk &amp; Layanan untuk Setiap Kebutuhan
           </h2>
           <p className="mt-3 text-base leading-relaxed text-foreground/65">
-            Dari rapat kantor sampai syukuran keluarga — tinggal pilih, kami yang sibuk
-            di dapur.
+            Dari stok sambal pecel rumahan sampai prasmanan acara kantor —
+            tinggal pilih, kami yang sibuk di dapur.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {LAYANAN.map((layanan) => (
             <Card
               key={layanan.id}
@@ -90,6 +90,38 @@ export function Layanan() {
               </CardFooter>
             </Card>
           ))}
+
+          {/* Kartu CTA untuk menu custom */}
+          <Card className="flex flex-col items-center justify-center border-2 border-dashed border-brand-border bg-white p-6 text-center">
+            <CardContent className="flex flex-1 flex-col items-center justify-center p-0">
+              <span className="flex size-12 items-center justify-center rounded-full bg-brand-soft shadow-sm">
+                <UtensilsCrossed className="size-6 text-brand" aria-hidden="true" />
+              </span>
+              <h3 className="mt-4 text-lg font-bold text-foreground">
+                Punya Request Sendiri?
+              </h3>
+              <p className="mt-1 text-sm leading-relaxed text-foreground/65">
+                Menu custom, budget khusus, atau borongan sambal pecel untuk
+                warung — atur bareng kami.
+              </p>
+            </CardContent>
+            <CardFooter className="w-full p-0 pt-5">
+              <Button
+                asChild
+                className="w-full bg-wa font-semibold text-white hover:bg-wa-dark"
+              >
+                <a
+                  href={PESAN_WA.umum}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Konsultasi menu custom via WhatsApp"
+                >
+                  <Phone className="size-4" aria-hidden="true" />
+                  Konsultasi Gratis
+                </a>
+              </Button>
+            </CardFooter>
+          </Card>
         </div>
       </div>
     </section>

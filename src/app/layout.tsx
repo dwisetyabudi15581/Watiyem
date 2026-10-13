@@ -15,10 +15,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cateringwatiyem.site"),
-  title: "Catering Watiyem — Jasa Catering Lezat & Murah di Magetan",
+  title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
   description:
-    "Jasa catering Magetan untuk acara syukuran, kantor & keluarga. Nasi box mulai Rp15rb, prasmanan, snack box & catering harian. Pesan gampang via WhatsApp!",
+    "Sambal pecel Madiun asli tanpa pengawet (botol mulai Rp15rb) & katering Magetan: nasi box, prasmanan, snack box & catering harian. Pesan gampang via WhatsApp!",
   keywords: [
+    "sambal pecel madiun",
+    "bumbu pecel madiun",
+    "jual sambal pecel madiun",
+    "sambal pecel botol",
     "catering magetan",
     "jasa catering magetan",
     "catering magetan murah",
@@ -32,13 +36,13 @@ export const metadata: Metadata = {
     "catering terdekat",
     "langganan makan siang magetan",
   ],
-  authors: [{ name: "Catering Watiyem" }],
+  authors: [{ name: "Watiyem" }],
   openGraph: {
-    title: "Catering Watiyem — Jasa Catering Lezat & Murah di Magetan",
+    title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
     description:
-      "Nasi box mulai Rp15rb, prasmanan, snack box & catering harian untuk warga Magetan dan sekitarnya. Pesan gampang via WhatsApp!",
+      "Sambal pecel Madiun botol mulai Rp15rb + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya. Pesan gampang via WhatsApp!",
     url: "https://cateringwatiyem.site",
-    siteName: "Catering Watiyem",
+    siteName: "Watiyem",
     type: "website",
     locale: "id_ID",
     images: [
@@ -46,15 +50,15 @@ export const metadata: Metadata = {
         url: "/images/hero.jpg",
         width: 1024,
         height: 848,
-        alt: "Nasi box catering Magetan dari Catering Watiyem",
+        alt: "Nasi box katering Magetan dari Watiyem",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Catering Watiyem — Jasa Catering Lezat & Murah di Magetan",
+    title: "Watiyem — Sambal Pecel Madiun & Katering di Magetan",
     description:
-      "Nasi box mulai Rp15rb, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya.",
+      "Sambal pecel Madiun botol mulai Rp15rb + nasi box, prasmanan, snack box & catering harian untuk Magetan dan sekitarnya.",
   },
   robots: {
     index: true,
@@ -67,9 +71,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "FoodEstablishment",
-  name: "Catering Watiyem",
+  name: "Watiyem — Sambal Pecel Madiun & Katering",
   description:
-    "Jasa catering makanan lezat & murah di Magetan: nasi box, prasmanan acara kantor, catering harian, dan snack box.",
+    "Sambal pecel Madiun asli tanpa pengawet dalam botol serta jasa katering di Magetan: nasi box, prasmanan acara kantor, catering harian, dan snack box.",
   servesCuisine: ["Indonesian", "Javanese"],
   priceRange: "Rp8.000 - Rp45.000",
   telephone: "+6285706800961",

@@ -64,7 +64,7 @@ export function Alur() {
           <div className="relative h-52 lg:col-span-2 lg:h-auto">
             <Image
               src="/images/tumpeng.jpg"
-              alt="Tumpengan nasi kuning untuk acara syukuran di Magetan dari Catering Watiyem"
+              alt="Tumpengan nasi kuning untuk acara syukuran di Magetan dari Watiyem"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"

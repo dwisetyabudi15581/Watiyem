@@ -16,6 +16,7 @@ const WA_PER_TAB: Record<string, string> = {
   prasmanan: PESAN_WA.prasmanan,
   harian: PESAN_WA.harian,
   "snack-box": PESAN_WA.snackBox,
+  "sambal-pecel": PESAN_WA.sambalPecel,
 };
 
 export function MenuSection() {

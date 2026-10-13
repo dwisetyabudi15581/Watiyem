@@ -17,7 +17,7 @@ export function Keunggulan() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-brand">
-            Kenapa Catering Watiyem
+            Kenapa Watiyem
           </p>
           <h2
             id="judul-keunggulan"

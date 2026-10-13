@@ -22,7 +22,7 @@ export function Testimoni() {
           </h2>
           <p className="mt-3 text-base leading-relaxed text-foreground/65">
             Dari rapat kantor sampai syukuran keluarga — inilah kata mereka setelah
-            menikmati masakan Catering Watiyem.
+            menikmati masakan Watiyem.
           </p>
         </div>
 
