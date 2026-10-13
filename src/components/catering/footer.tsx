@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone, Clock, UtensilsCrossed } from "lucide-react";
+import { MapPin, Phone, Clock, UtensilsCrossed, ExternalLink } from "lucide-react";
 import { BISNIS, PESAN_WA } from "@/lib/catering-data";
 
 const NAV_FOOTER = [
@@ -13,7 +13,7 @@ const NAV_FOOTER = [
 ];
 
 const MAPS_EMBED =
-  "https://maps.google.com/maps?q=-7.559592,111.454057&z=16&hl=id&output=embed";
+  "https://maps.google.com/maps?q=Catering+Watiyem@-7.5595932,111.4540501&z=17&hl=id&output=embed";
 
 export function Footer() {
   return (
@@ -97,18 +97,37 @@ export function Footer() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 pb-10 sm:px-6">
-        <div className="overflow-hidden rounded-2xl border border-brand-border shadow-sm">
+        <div className="relative overflow-hidden rounded-2xl border border-brand-border shadow-sm">
           <iframe
             src={MAPS_EMBED}
             title="Peta lokasi Catering Watiyem di Setro, Tebon, Magetan Barat"
-            className="h-56 w-full sm:h-64"
+            className="h-64 w-full sm:h-72"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
           />
+          {/* Kartu lokasi overlay — meniru kartu bisnis Google Maps */}
+          <div className="pointer-events-none absolute left-3 top-3 max-w-[85%] rounded-xl bg-white/95 p-3 shadow-lg backdrop-blur sm:left-4 sm:top-4">
+            <p className="flex items-center gap-1.5 text-sm font-extrabold text-foreground">
+              <MapPin className="size-4 shrink-0 text-brand" aria-hidden="true" />
+              Catering Watiyem
+            </p>
+            <p className="mt-1 text-xs leading-snug text-foreground/70">
+              {BISNIS.alamat}
+            </p>
+            <a
+              href={BISNIS.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pointer-events-auto mt-1.5 inline-flex items-center gap-1 text-xs font-bold text-brand underline-offset-2 hover:underline"
+            >
+              Buka di Google Maps
+              <ExternalLink className="size-3" aria-hidden="true" />
+            </a>
+          </div>
         </div>
         <p className="mt-2 text-center text-xs text-muted-foreground">
-          Plus Code: {BISNIS.plusCode} — {BISNIS.alamat}
+          Plus Code: {BISNIS.plusCode}
         </p>
       </div>
 
