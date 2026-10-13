@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berdasarkan analisis screenshot dan koordinat yang Anda berikan:\n\n1. **Ya, peta dan pin merah tampil dengan jelas** di tengah area peta Google Maps.\n2. **Ya, terlihat area permukiman/kampung yang padat**, bukan area kosong. Terlihat jalan-jalan (Jl. Senenu, Jl. Wilis, Jl. Arjuna, dll), bangunan, serta beberapa label tempat usaha di sekitarnya.\n3. **Label/nama tempat yang tertera di sekitar pin:**\n   * **Pasar wage Barat** (tepat di utara pin)\n   * **Dancell Barat** (di barat daya pin)\n   * **Resto Dewi Sri** (di selatan pin)\n   * **Pia Barat Bu Darsih** (di tenggara pin)\n   * **Sate Kambing Tengkieng Mbak Lin** (di utara)\n   * **Sate Gule Pak Min Brengos** (di barat)\n   * Jalan: *Jl. Senenu, Jl. Wilis, Jl. Arjuna, Jl. Mawar*, dll.\n\nLokasi pin saat ini sudah sesuai dengan alamat yang tertulis di bagian kontak (**Setro, Tebon, Kec. Barat, Kabupaten Magetan**) dan menunjukkan area pemukiman yang ramai, bukan lokasi kosong seperti koordinat lama (-7.6604, 111.3804) yang kemungkinan berada di area persawahan atau lahan kosong.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791870049,
+  "id": "202610131340365aa24f88380845f5",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610131340365aa24f88380845f5",
+  "usage": {
+    "completion_tokens": 364,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1365,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1729
+  }
+}

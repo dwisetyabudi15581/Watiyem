@@ -121,3 +121,21 @@ Stage Summary:
 - Seluruh riwayat repo https://github.com/dwisetyabudi15581/Watiyem kini atas nama user dengan avatar akun GitHub
 - Identitas git lokal tersimpan di repo ini untuk commit-commit berikutnya
 - Catatan: force push hanya mengubah metadata, isi file sama → deploy Vercel tidak berubah
+
+---
+Task ID: 14
+Agent: main (Super Z)
+Task: Perbaiki lokasi peta sesuai pin Google Maps yang dibagikan pemilik (maps.app.goo.gl/QzVHY3viDrrXmBLu9)
+
+Work Log:
+- Resolve short link via curl redirect → koordinat sebenarnya: -7.5595919, 111.4540572
+- Koordinat lama yang salah: -7.6604, 111.3804 (selisih ~15 km)
+- Update 3 titik: MAPS_EMBED footer.tsx (z=16), geo JSON-LD layout.tsx, mapsUrl catering-data.ts (buka pin persis)
+- Hitung Plus Code ulang (scripts/plus_code.py, algoritma OLC): 6P4HCFR3+5J — koreksi typo lama "CFR3+5JQ"; bentuk pendek CFR3+5J cocok dengan info asli user
+- Verifikasi dev: iframe src baru, teks Plus Code tampil, JSON-LD geo benar
+- VLM QA peta: pin merah di permukiman padat dekat Pasar Wage Barat, ada Jl. Senenu/Wilis/Arjuna — bukan area kosong seperti koordinat lama
+- Commit 6ff9577 (author: Dwi Setya Budi) → push → Vercel deploy ~75 detik → production terverifikasi: embed URL, Plus Code, JSON-LD geo, screenshot pin OK
+
+Stage Summary:
+- Peta footer, link alamat, dan schema SEO kini menunjuk lokasi persis dari pin yang dibagikan pemilik
+- Catatan untuk user: teks alamat tertulis masih "Setro, Tebon, Kec. Barat" — jika alamat perlu disesuaikan dengan lokasi pin baru, tinggal informasikan
