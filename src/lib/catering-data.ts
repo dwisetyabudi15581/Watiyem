@@ -12,9 +12,9 @@ export const BISNIS = {
   waNumber: "6285706800961",
   alamat:
     "Setro, Tebon, Kec. Barat, Kabupaten Magetan, Jawa Timur 63395",
-  plusCode: "CFR3+5JQ",
+  plusCode: "6P4HCFR3+5J",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Catering+Watiyem+Setro+Tebon+Magetan",
+    "https://www.google.com/maps/place/-7.559592,111.454057?q=-7.559592,111.454057",
   jam: "Setiap hari, 07.00–20.00 WIB",
   area:
     "Magetan & sekitarnya (± 20 km): Maospati, Sukomoro, Kawedanan, Parang, Bendo, Panekan, Nguntoronadi",

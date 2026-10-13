@@ -13,7 +13,7 @@ const NAV_FOOTER = [
 ];
 
 const MAPS_EMBED =
-  "https://maps.google.com/maps?q=-7.6604,111.3804&z=15&hl=id&output=embed";
+  "https://maps.google.com/maps?q=-7.559592,111.454057&z=16&hl=id&output=embed";
 
 export function Footer() {
   return (
