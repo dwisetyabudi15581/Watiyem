@@ -175,3 +175,25 @@ Stage Summary:
 - Website resmi multi-produk: sambal pecel Madiun (retail, bisa kirim se-Indonesia via ekspedisi) + 4 layanan katering
 - Peluang SEO baru: kata kunci "sambal pecel madiun" sangat dicari, sekarang ada di title, H1, keywords, dan schema
 - Harga sambal pecel adalah estimasi realistis pasar — user bisa koreksi kapan saja via catering-data.ts
+
+---
+Task ID: 17
+Agent: main (Super Z)
+Task: Koreksi produk sambal pecel ke format KERING per gram (foto + harga + semua konten) sesuai koreksi pemilik
+
+Work Log:
+- User koreksi: sambal pecel Madiun asli dijual KERING (bukan botolan), per gram, 500 gram = Rp25.000
+- Riset referensi dulu sesuai permintaan user: image-search 2x (16 hasil) → unduh 3 referensi terbaik (Kraton 500g ASLI MADIUN, close-up tekstur, Wong Ndeso foil 500g) → analisis VLM: bentuk granular kasar 1-5mm, warna coklat kemerahan-keemasan berkilau minyak, kemasan pouch foil/plastik transparan press-seal 100g-1kg
+- Generate foto AI baru berdasarkan referensi: sambal kering di atas daun pisang di tampah + pouch transparan + bahan (kacang, cabai, kencur, gula jawa) → VLM QA PASS 9/10 → konversi JPG 168KB ganti sambal-pecel.jpg
+- catering-data.ts: LAYANAN (Rp25.000/500 gram, Min. 100 gram, deskripsi kering + seduh air panas + Rp50/gram); MENU_TABS (100gr Rp5.000 / 250gr Rp12.500 / 500gr Rp25.000 Favorit); PESAN_WA.sambalPecel (form berat gram); TENTANG paragraf; GALERI ke-6 (cobek + "Sambal Pecel Kering"); KEUNGGULAN harga; FAQ +1 baru (kenapa kering → seduh air panas) + revisi 2 (awet ±3-6 bulan, kirim pouch sealed)
+- layout.tsx: meta description/OG/twitter + JSON-LD description & priceRange Rp5.000-Rp45.000; keywords: "sambal pecel botol" → "sambal pecel kering" + "sambal pecel kering madiun" + "bumbu pecel kering" (total 18)
+- hero.tsx strip harga "Sambal pecel kering Rp5rb"; footer deskripsi; README: tambah produk sambal kering + Plus Code + 18 keyword + FAQ 11
+- QA: tsc 0 error src/, eslint bersih; agent-browser: kata "botol" 0 di halaman (hanya FAQ "bukan botolan basah" yg disengaja), kartu & tab menu (klik mouse asli coordinate 900,450 karena synthetic click tidak memicu Radix) semua paket gram tampil; 16 WA button, 14 img termuat; VLM 4 screenshot PASS (tab, kartu, galeri, hero mobile)
+- .gitignore + scripts/sambal-ref/ (foto marketplace pihak ketua tidak di-commit karena copyright)
+- Commit f299108 (author Dwi Setya Budi) → push → verifikasi production: HTTP 200, foto baru 171867 bytes live, kering 37x, Rp 25.000 4x, /500 gram 6x, Min. 100 gram 2x, WA template kering tersandi benar, JSON-LD priceRange baru, 14 img & 16 WA di DOM live
+
+Stage Summary:
+- Produk sambal pecel kini akurat sesuai realitas pasar: KERING per gram, 500 gr Rp25.000, seduh air panas, pouch sealed, awet ±3 bulan suhu ruang
+- Foto produk diganti dari botol → sambal kering di tampah + pouch (dibuat setelah riset gambar asli sesuai instruksi user)
+- Estimasi daya tahan (±3 bln suhu ruang / ±6 bln kulkas) adalah angka wajar pasar — user bisa koreksi via catering-data.ts
+- Commit b844dc5 (pesan UUID) ditemukan = artefak auto-commit sesi Task 16 sebelumnya, isinya aman (imggen + worklog)
