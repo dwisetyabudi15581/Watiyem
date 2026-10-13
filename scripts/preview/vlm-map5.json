@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berdasarkan gambar yang diberikan, berikut jawaban singkatnya:\n\n1.  **Ya**, ada pin merah di peta.\n2.  **Ya**, ada kartu kecil putih di pojok kiri atas peta yang menampilkan nama 'Catering Watiyem', alamat lengkap, dan tautan merah 'Buka di Google Maps'.\n3.  **Tidak**, kartu tersebut terletak di sisi kiri dan **tidak** menutupi pin merah (pin merah masih terlihat jelas di sebelah kanan kartu).\n4.  **Ya**, tampilannya terlihat rapi, informatif, dan mudah dibaca.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791871203,
+  "id": "202610131359577df4fc21ad824e0e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610131359577df4fc21ad824e0e",
+  "usage": {
+    "completion_tokens": 159,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1337,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1496
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berdasarkan peta Google Maps yang terlihat pada gambar:\n\n1) **Ya**, ada **pin merah** di tengah-tengah area peta, namun **tidak ada label teks \"Catering Watiyem\"** yang tertulis di samping atau di atas pin tersebut (hanya ikon pin merah saja).\n\n2) Peta ini cukup **detail**. Pada level zoom ini, terlihat jelas:\n   *   **Jalan-jalan perumahan** dengan nama jalan (misalnya: Jl. Kanti, Jl. Ps. Legi, Jl. Anjasmara, Jl. Willis, dll).\n   *   **Bentuk bangunan/perumahan** (kotak-kotak abu-abu yang merepresentasikan rumah atau gedung).\n   *   Beberapa **label tempat** seperti \"Pasar Tradisional Mangge Barat\", \"Mixue Barat Magetan\", dan \"Pasar Wage Barat\".",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791871145,
+  "id": "20261013135856ff3ea2faf04d4a4a",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013135856ff3ea2faf04d4a4a",
+  "usage": {
+    "completion_tokens": 224,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1310,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 1534
+  }
+}
