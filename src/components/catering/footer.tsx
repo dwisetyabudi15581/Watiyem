@@ -13,7 +13,7 @@ const NAV_FOOTER = [
 ];
 
 const MAPS_EMBED =
-  "https://maps.google.com/maps?q=Catering+Watiyem@-7.5595932,111.4540501&z=17&hl=id&output=embed";
+  "https://maps.google.com/maps?q=Catering+Watiyem@-7.5596481,111.4541782&z=17&hl=id&output=embed";
 
 export function Footer() {
   return (

@@ -12,9 +12,9 @@ export const BISNIS = {
   waNumber: "6285706800961",
   alamat:
     "Setro, Tebon, Kec. Barat, Kabupaten Magetan, Jawa Timur 63395",
-  plusCode: "6P4HCFR3+5J",
+  plusCode: "6P4HCFR3+4M",
   mapsUrl:
-    "https://www.google.com/maps/place/-7.5595932,111.4540501?q=-7.5595932,111.4540501",
+    "https://www.google.com/maps/place/-7.5596481,111.4541782?q=-7.5596481,111.4541782",
   jam: "Setiap hari, 07.00–20.00 WIB",
   area:
     "Magetan & sekitarnya (± 20 km): Maospati, Sukomoro, Kawedanan, Parang, Bendo, Panekan, Nguntoronadi",

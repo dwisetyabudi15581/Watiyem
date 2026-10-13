@@ -81,7 +81,7 @@ const jsonLd = {
     postalCode: "63395",
     addressCountry: "ID",
   },
-  geo: { "@type": "GeoCoordinates", latitude: -7.5595932, longitude: 111.4540501 },
+  geo: { "@type": "GeoCoordinates", latitude: -7.5596481, longitude: 111.4541782 },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
