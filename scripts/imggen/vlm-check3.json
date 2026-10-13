@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Foto 1: OK**\nTidak ditemukan cacat AI yang signifikan. Makanan, wadah kaca, dan tekstur nasi terlihat natural.\n\n**Foto 2: MASALAH**\n1. **Objek tak wajar**: Bawang merah di depan keranjang (pojok kanan bawah) memiliki bentuk aneh/bergumpal tidak wajar.\n2. **Cacat AI**: Beberapa siung bawang putih di dalam keranjang tampak meleleh atau menyatu satu sama lain.\n3. **Tekstur bumbu**: Rempah-rempah berwarna kuning/oranye (kanan atas) terlihat seperti \"cairan\" atau lilin yang tidak alami.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791867456,
+  "id": "202610131257281ead8b57507f4100",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610131257281ead8b57507f4100",
+  "usage": {
+    "completion_tokens": 170,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2777,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2947
+  }
+}

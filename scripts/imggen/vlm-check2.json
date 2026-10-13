@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berikut hasil pemeriksaan singkat untuk ke-4 foto:\n\n1. **OK**\n2. **OK**\n3. **MASALAH** - Terdapat cacat anatomi pada tangan manusia (jari-jari terlihat aneh/berlebih atau menyatu), serta beberapa kontainer makanan di barisan belakang tampak blur/tidak fokus.\n4. **MASALAH** - Wajan/wok memiliki bentuk yang tidak logis (bagian dalam terlihat seperti mangkuk datar dengan dinding vertikal, bukan wok cekung), dan asap/uap terlihat tidak natural (terlalu tebal dan berbentuk aneh).",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791867289,
+  "id": "20261013125443838127fa6b09426e",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013125443838127fa6b09426e",
+  "usage": {
+    "completion_tokens": 157,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5496,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 5653
+  }
+}

@@ -79,3 +79,26 @@ Stage Summary:
 - Website production https://watiyem.vercel.app lolos semua pemeriksaan: SEO on-page, schema, aset, visual, mobile
 - Siap didaftarkan ke Google Search Console (BAB 5 panduan) dengan URL live ini
 - Catatan: belum ada sitemap.xml live — saran tambahkan untuk GSC
+
+---
+Task ID: 12
+Agent: main (Super Z)
+Task: Tambah elemen wajib website — foto galeri, section Tentang Kami, peta Google Maps (user minta dibuatkan AI)
+
+Work Log:
+- Audit konten website → identifikasi 3 kekurangan prioritas: galeri foto, profil Tentang Kami, peta embed
+- Generate 7 foto AI via z-ai CLI (script scripts/generate_photos.sh): profil Bu Watiyem 864x1152 + 6 foto galeri
+- QA VLM iteratif: 4 foto cacat AI (makanan meleleh, tumpeng terdistorsi, teks helm aneh, tangan ganjil) → regenerate 2x dengan prompt lebih spesifik → semua foto akhirnya OK (galeri-6 diganti subjek jadi sambal cobek)
+- Konversi PNG→JPG kualitas 83, max 1600px (scripts/convert_photos.py) ke public/images/ (~90-200KB per foto)
+- Data baru di catering-data.ts: TENTANG (2 paragraf cerita, kutipan Bu Watiyem, 3 statistik) + GALERI (6 foto + caption) + BISNIS.plusCode
+- Komponen baru: tentang-kami.tsx (foto portrait + narasi + kutipan + statistik + CTA WA), galeri.tsx (grid 6 foto + caption overlay)
+- footer.tsx: embed Google Maps iframe (pin koordinat -7.6604,111.3804) + baris Plus Code CFR3+5JQ; nav footer + header ditambah link Galeri & Tentang
+- page.tsx: urutan baru Hero → Keunggulan → Layanan → Menu → Galeri → Tentang → Alur → Testimoni → CTA
+- QA: TSC & ESLint bersih; agent-browser 14 tombol WA, 13 gambar termuat (setelah scroll bertahap), peta iframe tampil pin Merah Setro Tebon; VLM QA section baru: galeri rapi 3 kolom, tentang seimbang, tanpa cacat layout
+- Catatan teknis: screenshot full-page tidak menangkap iframe cross-origin & lazy image — verifikasi iframe harus viewport screenshot + scrollIntoView
+- Commit afbc6d8 → push → Vercel auto-deploy sukses → verifikasi production: id galeri/tentang ada, semua foto 200, 14 WA button, 0 img gagal
+
+Stage Summary:
+- Website kini punya 11/11 elemen wajib: harga, WA button, alur, NAP, area, mobile-friendly, USP, galeri, tentang kami, peta embed (testimoni masih template menunggu yang asli; Instagram menyusul)
+- Semua foto AI — sarankan user ganti bertahap dengan foto asli saat sudah ada
+- Live di https://watiyem.vercel.app

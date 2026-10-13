@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Berikut hasil pemeriksaan berdasarkan screenshot yang Anda berikan:\n\n**1) Semua foto galeri termuat?**\nYa, semua 6 foto masakan (Nasi Box, Prasmanan, Tumpeng, Snack Box, Catering Harian, Sambal) di section **\"Galeri Foto: Langsung dari Dapur Kami\"** termuat dengan baik. Layout grid-nya rapi (3 kolom di desktop, 1 kolom di mobile), dan setiap foto dilengkapi caption yang jelas.\n\n**2) Foto Bu Watiyem termuat & layout tentang seimbang?**\nYa, foto **Bu Watiyem** di dapur (mengenakan celemek merah) tampil dengan jelas di sisi kiri. Layout section **\"Tentang Kami: Berkenalan dengan Bu Watiyem\"** sangat seimbang menggunakan format dua kolom (gambar kiri, teks kanan). Di sebelah kanan terdapat cerita lengkap, kutipan dalam kotak bergaris merah, dan statistik (4 layanan, ±20 km, Setiap hari) yang tertata rapi.\n\n**3) Peta Google Maps tampil di footer?**\nTidak terlihat pada kedua screenshot. Footer yang terlihat hanya menampilkan informasi teks (alamat, kontak telepon/WhatsApp, jam operasional, dan menu navigasi). Tidak ada embed Google Maps atau placeholder peta di area footer tersebut.\n\n**4) Ada cacat layout/tumpang tindih?**\nTidak ada cacat atau tumpang tindih. Semua elemen—baik di versi desktop maupun mobile—tampil rapi dengan jarak (spacing) yang konsisten. Responsif layout juga bekerja baik; konten menyesuaikan lebar layar tanpa memotong teks atau menyebabkan overflow.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791867762,
+  "id": "20261013130217a8a4157b59bc4b36",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20261013130217a8a4157b59bc4b36",
+  "usage": {
+    "completion_tokens": 419,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 10195,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 10614
+  }
+}
