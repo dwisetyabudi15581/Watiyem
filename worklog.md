@@ -102,3 +102,22 @@ Stage Summary:
 - Website kini punya 11/11 elemen wajib: harga, WA button, alur, NAP, area, mobile-friendly, USP, galeri, tentang kami, peta embed (testimoni masih template menunggu yang asli; Instagram menyusul)
 - Semua foto AI — sarankan user ganti bertahap dengan foto asli saat sudah ada
 - Live di https://watiyem.vercel.app
+
+---
+Task ID: 13
+Agent: main (Super Z)
+Task: Push ke GitHub dengan nama & email milik user
+
+Work Log:
+- Cek git config: commit lama semua atas nama "Z User <z@container>"
+- Query GitHub API /user (id 254084642): profil belum set nama/email publik
+- Set identitas repo: user.name="Dwi Setya Budi", user.email="254084642+dwisetyabudi15581@users.noreply.github.com" (format noreply resmi GitHub agar commit ter-link ke akun)
+- Coba rebase --root --exec --reset-author → macet (duplicate pick), di-abort dengan aman
+- Pakai git filter-branch --env-filter → 10 commit berhasil di-rewrite author+committer
+- force-with-lease ditolak (tracking ref ikut ter-rewrite) → verifikasi ls-remote tidak ada push lain → force push sukses (afbc6d8 → 58a491c)
+- Verifikasi GitHub API: semua commit kini "Dwi Setya Budi" dan link-akun: YA (avatar user tampil di riwayat commit)
+
+Stage Summary:
+- Seluruh riwayat repo https://github.com/dwisetyabudi15581/Watiyem kini atas nama user dengan avatar akun GitHub
+- Identitas git lokal tersimpan di repo ini untuk commit-commit berikutnya
+- Catatan: force push hanya mengubah metadata, isi file sama → deploy Vercel tidak berubah
