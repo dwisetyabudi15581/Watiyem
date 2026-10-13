@@ -156,3 +156,22 @@ Work Log:
 Stage Summary:
 - Peta footer kini menunjuk -7.5596481,111.4541782 dengan kartu nama overlay, live di production
 - Pendaftaran GBP: menunggu user menjalankan sendiri (bahan sudah lengkap), atau kirim link pin lagi jika ingin revisi
+
+---
+Task ID: 16
+Agent: main (Super Z)
+Task: Rebrand website jadi "Watiyem — Sambal Pecel Madiun & Katering" + tambah produk sambal pecel Madiun
+
+Work Log:
+- User juga jualan sambal pecel Madiun → minta ditambahkan ke website + ganti nama brand
+- Generate foto produk sambal pecel botol kaca (AI 1344x768) → VLM QA OK → konversi JPG 173KB ke public/images/sambal-pecel.jpg
+- Rebrand menyeluruh: BISNIS.nama, tagline, subTagline; title/meta/OG/twitter/keywords layout.tsx (+4 keyword sambal pecel); JSON-LD name & description; header (Watiyem + subtitle); H1 hero "Sambal Pecel Madiun & Katering Lezat di Magetan"; footer, copyright, semua aria-label & alt text (sapaan WA template "Halo Catering Watiyem" → "Halo Watiyem")
+- Produk baru: kartu layanan ke-5 Sambal Pecel Madiun (Rp15rb/200ml, tanpa minimal, kirim ekspedisi); tab menu ke-5 (botol 200/350/500 ml = Rp15/22/30rb); PESAN_WA.sambalPecel; 2 FAQ baru (daya tahan ±1 bulan kulkas, kirim luar kota JNE/J&T)
+- Grid layanan jadi 3 kolom: 5 produk + kartu CTA "Punya Request Sendiri?" (isi slot ke-6); keunggulan & statistik tentang diperbarui (5 produk); galeri item ke-6 diganti foto botol sambal pecel
+- QA: tsc & eslint bersih; 16 tombol WA; tab Sambal Pecel terverifikasi klik asli (synthetic event tidak memicu Radix — artefak pengujian, bukan bug); 14 gambar termuat; VLM QA 5/5 lolos
+- Commit d92f3c7 (author user) → push → deploy ±80 detik → production terverifikasi: title baru, tab sambal, WA khusus sambal ADA, foto 200 OK
+
+Stage Summary:
+- Website resmi multi-produk: sambal pecel Madiun (retail, bisa kirim se-Indonesia via ekspedisi) + 4 layanan katering
+- Peluang SEO baru: kata kunci "sambal pecel madiun" sangat dicari, sekarang ada di title, H1, keywords, dan schema
+- Harga sambal pecel adalah estimasi realistis pasar — user bisa koreksi kapan saja via catering-data.ts
