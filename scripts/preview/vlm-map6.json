@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "YA, pin merah tampil jelas di peta dan kartu nama lokasinya terlihat rapi dengan informasi alamat yang lengkap.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791875415,
+  "id": "202610131510124bbf3e048f0f40e1",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "202610131510124bbf3e048f0f40e1",
+  "usage": {
+    "completion_tokens": 34,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 1294,
+    "prompt_tokens_details": {
+      "cached_tokens": 2
+    },
+    "total_tokens": 1328
+  }
+}

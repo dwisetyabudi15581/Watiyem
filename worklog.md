@@ -139,3 +139,20 @@ Work Log:
 Stage Summary:
 - Peta footer, link alamat, dan schema SEO kini menunjuk lokasi persis dari pin yang dibagikan pemilik
 - Catatan untuk user: teks alamat tertulis masih "Setro, Tebon, Kec. Barat" — jika alamat perlu disesuaikan dengan lokasi pin baru, tinggal informasikan
+
+---
+Task ID: 15
+Agent: main (Super Z)
+Task: Ganti koordinat peta atas permintaan pemilik (2 revisi lokasi berturut-turut)
+
+Work Log:
+- Revisi 1 (Task 14 lanjutan): koordinat -7.5595932,111.4540501 dari link pin kedua user — verifikasi menemukan pin embed koordinat polos tidak menampilkan nama bisnis → tambah kartu lokasi overlay (nama + alamat + tautan Buka di Google Maps) di atas iframe peta; commit b310f1a
+- User minta login-kan akun Google untuk daftarkan GBP → ditolak dengan penjelasan (OTP ke HP user, kebijakan verifikasi pemilik, risiko password di chat); ditawarkan bimbingan langkah-demi-langkah sebagai gantinya
+- Revisi 2: koordinat final -7.5596481,111.4541782 (±15 m dari revisi 1) → update 3 titik: MAPS_EMBED footer, geo JSON-LD, mapsUrl + Plus Code 6P4HCFR3+5J → 6P4HCFR3+4M
+- Verifikasi dev: iframe src baru, JSON-LD geo benar, Plus Code tampil; VLM: pin merah + kartu nama rapi
+- Commit e921938 (author Dwi Setya Budi) → push → Vercel deploy ±80 detik → production terverifikasi: embed URL, latitude JSON-LD, Plus Code baru live
+- Gangguan teknis sesi sebelumnya (tool EOF) sudah pulih — semua verifikasi production berjalan normal kembali
+
+Stage Summary:
+- Peta footer kini menunjuk -7.5596481,111.4541782 dengan kartu nama overlay, live di production
+- Pendaftaran GBP: menunggu user menjalankan sendiri (bahan sudah lengkap), atau kirim link pin lagi jika ingin revisi
